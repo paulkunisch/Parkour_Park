@@ -1,13 +1,12 @@
 General:
-	Input System
-	
+	Input System/steuerung der kamera mit rechten joystick
 
 	multiplayer
 
 
 	Charakter Skins select and change
 	levelselect: enable through playerprefs, link to level, pictures
-	main menu: mute levelselect?
+	
 
 
 Main Menu:
@@ -16,7 +15,10 @@ Main Menu:
 		anzeige der Steuerung
 		bearbeiten der tasten
 
-Floor: 
+
+	mute levelselect?
+
+Tutorial Level: 
 	Kerzen an Seitenwänden
 	Tür hinter Player
 
@@ -32,7 +34,10 @@ Floor:
 	Kerzen/ kronleuchter / tische / thron / könig
 
 
-
-
-
 	Tutorial
+
+Flower Meadow:
+
+Bleak Forest:
+
+Arluviors Tower
