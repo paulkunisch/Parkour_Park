@@ -49,7 +49,7 @@ public class ThirdPersonMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             Vector3 moveDir = Quaternion.Euler(0f, angle, 0f) * Vector3.forward;
-            controller.Move(moveDir.normalized * speed * Time.fixedDeltaTime);
+            controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
 
 
@@ -58,7 +58,7 @@ public class ThirdPersonMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpheigth * -2f * gravity);
             jumpcount--;
         }
-        velocity.y += gravity * Time.fixedDeltaTime;
-        controller.Move(velocity * Time.fixedDeltaTime);
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);
     }
  }

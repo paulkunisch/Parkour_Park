@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2071615312755037699}
   - component: {fileID: 3102980915983882662}
   - component: {fileID: 933643675888119148}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FacitedHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,9 +92,9 @@ GameObject:
   - component: {fileID: 1533283720346635102}
   - component: {fileID: 2328117600664823567}
   - component: {fileID: 3613499376609331735}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player_4
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,13 +152,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 3
+  m_Height: 2.9
   m_Radius: 0.35
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.35, z: 0}
+  m_Center: {x: 0, y: 0.43, z: 0}
 --- !u!1 &3228109983436519503
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1535785960927995900}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1918509683814867599}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 6314440214799015365}
   - component: {fileID: 3961914472820456360}
   - component: {fileID: 5198985242154072834}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 3805745162826724998}
   - component: {fileID: 4536829123012158334}
   - component: {fileID: 3523417866390705859}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: we
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 6018723406954111493}
   - component: {fileID: 1952062673393315407}
   - component: {fileID: 965507118046708998}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: we (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1321,7 +1321,7 @@ GameObject:
   - component: {fileID: 5927195391132880995}
   - component: {fileID: 8222519744582046007}
   - component: {fileID: 1436468875460094524}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

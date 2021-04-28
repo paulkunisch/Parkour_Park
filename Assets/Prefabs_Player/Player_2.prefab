@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4357591503160799761}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3518534198159994824}
-  m_LocalRotation: {x: 0.08718136, y: 0.000000017140353, z: -0.0000000015000307, w: 0.99619246}
+  m_LocalRotation: {x: 0.08718137, y: 0.000000017140737, z: -0.0000000015000644, w: 0.99619246}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -132,7 +132,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3518534198279486843}
-  m_LocalRotation: {x: 0.06904669, y: 0.000000017165316, z: -0.0000000011880436, w: 0.99761343}
+  m_LocalRotation: {x: 0.0690467, y: -0.000000017693603, z: 0.0000000012246074, w: 0.99761343}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -614,7 +614,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3518534199854289125}
-  m_LocalRotation: {x: 0.050937172, y: -0.0000000021480058, z: 1.0955555e-10, w: 0.9987019}
+  m_LocalRotation: {x: 0.050937172, y: 0.0000000021480058, z: -1.0955555e-10, w: 0.9987019}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -690,7 +690,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3518534199963056812}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.0996113, z: -11.715658}
+  m_LocalPosition: {x: 0, y: 3.0996115, z: -11.715658}
   m_LocalScale: {x: 0.6666667, y: 1, z: 0.6666667}
   m_Children:
   - {fileID: 3518534198159994825}
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 4510186515147633590}
   - component: {fileID: 4534604712131586890}
   - component: {fileID: 4525181478919502380}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PREFAB_Hat_Party
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -920,7 +920,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 980428468439470509}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -955,7 +955,7 @@ GameObject:
   - component: {fileID: 4447114041454390263}
   - component: {fileID: 2631076169232249271}
   - component: {fileID: 4303338088658126885}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1050,7 +1050,7 @@ GameObject:
   - component: {fileID: 4094361085691000566}
   - component: {fileID: 1463107439651975950}
   - component: {fileID: 1261729205108161369}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: we
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1146,7 +1146,7 @@ GameObject:
   - component: {fileID: 8302405643849184673}
   - component: {fileID: 8100191462764901582}
   - component: {fileID: 958172431884257202}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1241,9 +1241,9 @@ GameObject:
   - component: {fileID: 4825105368478315315}
   - component: {fileID: 8646423308992667490}
   - component: {fileID: 7319717352604004986}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player_2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1301,13 +1301,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 3
+  m_Height: 2.9
   m_Radius: 0.35
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.35, z: 0}
+  m_Center: {x: 0, y: 0.43, z: 0}
 --- !u!1 &8848208016114575485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,7 +1320,7 @@ GameObject:
   - component: {fileID: 8255174189889375808}
   - component: {fileID: 5167053069921847800}
   - component: {fileID: 3597040231561964644}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: we (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

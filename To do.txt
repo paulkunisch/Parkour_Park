@@ -1,5 +1,8 @@
 General:
-	Input System/steuerung der kamera mit rechten joystick
+	Input System/steuerung der kamera mit rechten joystick -- Paul
+
+	Rotes Flickern time.deltatime
+	türen öffnen
 
 	multiplayer
 
@@ -24,6 +27,8 @@ Tutorial Level:
 
 	Steuerungserklärung nach start ins game
 
+	Trigger lösen Tutorial aus
+
 	erstes Hindernis im Gang
 	Pop-up Text vor erstem Hindernis
 	roter Teppich
@@ -41,3 +46,12 @@ Flower Meadow:
 Bleak Forest:
 
 Arluviors Tower
+
+
+
+
+
+
+
+
+

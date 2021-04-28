@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517059702675821794}
-  m_LocalRotation: {x: 0.050937172, y: 0.0000000021480058, z: -1.0955555e-10, w: 0.9987019}
+  m_LocalRotation: {x: 0.050937172, y: -0.0000000021480058, z: 1.0955555e-10, w: 0.9987019}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -531,7 +531,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1517059703858266094}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -705,7 +705,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517059704169065423}
-  m_LocalRotation: {x: 0.08718137, y: 0.000000016621696, z: -0.0000000014546406, w: 0.99619246}
+  m_LocalRotation: {x: 0.08718137, y: 0.000000016621689, z: -0.0000000014546401, w: 0.99619246}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -779,7 +779,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517059704334760316}
-  m_LocalRotation: {x: 0.0690467, y: -0.000000017693603, z: 0.0000000012246074, w: 0.99761343}
+  m_LocalRotation: {x: 0.0690467, y: 0.000000017693603, z: -0.0000000012246074, w: 0.99761343}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 5528441709455159031}
   - component: {fileID: 5528441709455159030}
   - component: {fileID: 5528441709455159025}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -936,7 +936,7 @@ GameObject:
   - component: {fileID: 5528441710035927456}
   - component: {fileID: 5528441710035927459}
   - component: {fileID: 5528441710035927458}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1031,9 +1031,9 @@ GameObject:
   - component: {fileID: 7435375029054306100}
   - component: {fileID: 5919895695527500645}
   - component: {fileID: 4633405581662942845}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player_1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1091,13 +1091,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 3
+  m_Height: 2.9
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.35, z: 0}
+  m_Center: {x: 0, y: 0.43, z: 0}
 --- !u!1 &7850847596875754680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,7 +1109,7 @@ GameObject:
   - component: {fileID: 7850847596876078778}
   - component: {fileID: 7850847596878911146}
   - component: {fileID: 7850847596877992316}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Kitsune
   m_TagString: Untagged
   m_Icon: {fileID: 0}
