@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class Menu_Controller_Navigation : MonoBehaviour
 {
-    public GameObject mainMenuFirstButton; //, characterFirstButton, creditsFirstButton,
+    public GameObject mainMenuFirstButton; 
     private void Start()
     {
         // clear selected Object

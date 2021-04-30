@@ -359,14 +359,21 @@ MonoBehaviour:
 
     Assets:
 
-    <link="ExampleText">ExampleTitle</link>
+
+    3D Models:
+
+    Chain for Chandelier: <link="https://www.cgtrader.com/items/1894251/download-page">chain
+    3d</link>
+
+    Model for Chandelier: <link="https://www.turbosquid.com/3d-models/medieval-candle-chandelier-3d-model-1389671">Medieval
+    Candle Chandelier 3D Model</link>
 
 
     Codeexamples:
 
 
-    Jonathon
-    Hopkins: <link="https://gitlab.com/jonnohopkins/tmp-hyperlinks/-/blob/master/Assets/OpenHyperlinks.cs">Open
+    Jonathon Hopkins:
+    <link="https://gitlab.com/jonnohopkins/tmp-hyperlinks/-/blob/master/Assets/OpenHyperlinks.cs">Open
     Hyperlinks</link>
 
     TechCor (unity forum): <link="https://forum.unity.com/threads/non-interactable-ui-element-e-g-button-not-skipped-by-navigation.285500/#post-2522528">Skip
@@ -459,8 +466,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a15026241d12f724b989ac077818c242, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doesColorChangeOnHover: 1
-  hoverColor: {r: 0.23529412, g: 0.47058824, b: 1, a: 1}
 --- !u!1 &374456608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,7 +1073,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0, g: 1, b: 0.3882353, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0, g: 1, b: 0.3882353, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1194,7 +1199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a444d49a1e6df554a9d27404d8e0f2a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenuFirstButton: {fileID: 0}
+  mainMenuFirstButton: {fileID: 785639934}
 --- !u!1 &948620179
 GameObject:
   m_ObjectHideFlags: 0

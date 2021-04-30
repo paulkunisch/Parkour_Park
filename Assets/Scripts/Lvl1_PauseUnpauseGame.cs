@@ -1,34 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Lvl1_PauseUnpauseGame : MonoBehaviour
 {
-    public GameObject pauseMenu;
-    public GameObject character;
+    public GameObject pauseMenu; 
+    public GameObject character; 
+    public GameObject hud;
+    public GameObject MenuFirstButton;
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Pause"))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetButtonDown("Pause")) //Escape or Gamepad(Start)
         {
-            PauseUnpause();
+            PauseUnpause();// execute function
         }
     }
     
     public void PauseUnpause()
     {
-        if (!pauseMenu.activeInHierarchy)
+        if (!pauseMenu.activeInHierarchy) // Pause is not activated --> activate
         {
-            pauseMenu.SetActive(true);
-            character.SetActive(false);
+            if (pauseMenu.scene.IsValid()) { pauseMenu.SetActive(true); } // ui with pause elements
+            if (character.scene.IsValid()) { character.SetActive(false); } // character controller deactivated, so you dont move in pause screen
+            if (hud.scene.IsValid()) { hud.SetActive(false); } // hud deactived in pause
             Time.timeScale = 0f;
-        } else
+            // clear selected Object
+            EventSystem.current.SetSelectedGameObject(null);
+            // set a new selected Object
+            EventSystem.current.SetSelectedGameObject(MenuFirstButton);
+        } 
+        else // leave pause
         {
-            pauseMenu.SetActive(false);
-            character.SetActive(true);
+            if (pauseMenu.scene.IsValid()) { pauseMenu.SetActive(false); }
+            if (character.scene.IsValid()) { character.SetActive(true); }
+            if (hud.scene.IsValid()) { hud.SetActive(true); }
             Time.timeScale = 1f;
-            pauseMenu.SetActive(false);
+            if (pauseMenu.scene.IsValid()) { pauseMenu.SetActive(false); } // unity being unity
         }
     }
 }

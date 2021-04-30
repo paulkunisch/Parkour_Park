@@ -18,8 +18,7 @@ Main Menu:
 		anzeige der Steuerung
 		bearbeiten der tasten
 
-
-	mute levelselect?
+	play music across scenes
 
 Tutorial Level: 
 	Kerzen an Seitenwänden
