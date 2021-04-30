@@ -1,5 +1,5 @@
 General:
-	Input System/steuerung der kamera mit rechten joystick -- Paul
+	Orientierung der Steuerung nach Kameraausrichtung
 
 	Rotes Flickern time.deltatime
 	türen öffnen
