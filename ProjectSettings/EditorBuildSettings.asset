@@ -24,15 +24,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Multiplayer.unity
     guid: 547f97b721dda7948a64420c009220b9
   - enabled: 1
-    path: "Assets/Scenes/Level 1_Das Schloss des K\xF6nigs.unity"
+    path: Assets/Scenes/Level 1_King's Castle.unity
     guid: 078c05bb8217d6744a11fb03b045c6f0
   - enabled: 1
-    path: Assets/Scenes/Level 2.unity
+    path: Assets/Scenes/Level 2_Flower Meadow.unity
     guid: 907b9007a1537d043aa162dcb8755e4a
   - enabled: 1
-    path: Assets/Scenes/Level 3.unity
+    path: Assets/Scenes/Level 3_Bleak Forest.unity
     guid: bc2f420f0afbf2b48ad30213626cbc54
   - enabled: 1
-    path: Assets/Scenes/Level 4.unity
+    path: Assets/Scenes/Level 4_Arluvior Tower.unity
     guid: 7a863dcd3bc625942a65b6ae5a941320
   m_configObjects: {}

@@ -10,7 +10,7 @@ using TMPro;
 
 // somewhat based upon the TextMesh Pro example script: TMP_TextSelector_B
 [RequireComponent(typeof(TextMeshProUGUI))]
-public class OpenHyperlinks : MonoBehaviour, IPointerClickHandler
+public class Credit_OpenHyperlinks : MonoBehaviour, IPointerClickHandler
 {
     public bool doesColorChangeOnHover = true;
     public Color hoverColor = new Color(60f / 255f, 120f / 255f, 1f);
