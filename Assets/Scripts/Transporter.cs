@@ -4,19 +4,23 @@ using UnityEngine;
 
 public class Transporter : MonoBehaviour
 {
-    private GameObject toGo;
+    public CharacterController CharacterController;
+    [SerializeField] private GameObject toGo;
     private void Start()
     {
-        toGo = GameObject.Find("Teleporter_1");
+       
     }
     private void OnTriggerEnter(Collider other)
     {
         if (null != toGo)
         {
-            other.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
-            other.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+            CharacterController.enabled = false;
+           // other.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+           // other.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
             other.transform.position = toGo.transform.position + new Vector3(0, 1, 0);
+            CharacterController.enabled = true;
         }
-        Debug.Log("#### DMTTRigggerAnimation Teleporter: " + this.gameObject.name + " <>");
+       // Debug.Log("#### DMTTRigggerAnimation Teleporter: " + this.gameObject.name + " <>");
+        //Debug.Log(toGo.transform.position);
     }
 }

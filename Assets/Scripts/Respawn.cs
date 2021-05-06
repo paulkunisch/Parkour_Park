@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
-    [SerializeField] private Transform Player;
-    [SerializeField] private Transform respawn_Point;
+    // [SerializeField] private Transform Player;
+    public GameObject Player;
+    public Vector3 RespawnPoint;
+    //[SerializeField] private Transform respawn_Point;
 
-        void OnTriggerEnter(Collider other)
+    private void Start()
     {
-        Player.transform.position = respawn_Point.transform.position;
+        
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Player.transform.position = RespawnPoint;
     }
 }
