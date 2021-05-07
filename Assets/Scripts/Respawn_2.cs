@@ -19,7 +19,7 @@ public class Respawn_2 : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (this.transform.position.y < 5)
+        if (this.transform.position.y < 2)
         {
             // rb.velocity = Vector3.zero;
             // rb.angularVelocity = Vector3.zero;
