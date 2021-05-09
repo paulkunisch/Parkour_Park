@@ -1,8 +1,5 @@
 General:
-	Orientierung der Steuerung nach Kameraausrichtung
-
-	Rotes Flickern time.deltatime
-	türen öffnen
+	ausrichten der kamera nach zeitintervall nach vorne
 
 	multiplayer
 
@@ -10,7 +7,9 @@ General:
 	Charakter Skins select and change
 	levelselect: enable through playerprefs, link to level, pictures
 	
-
+Build:
+	Icon
+	Cursor
 
 Main Menu:
 	Settings-Scene:
@@ -18,35 +17,39 @@ Main Menu:
 		anzeige der Steuerung
 		bearbeiten der tasten
 
+	highlighted und selected buttons
+
 	play music across scenes
 
 Tutorial Level: 
-	Kerzen an Seitenwänden
-	Tür hinter Player
-
 	Steuerungserklärung nach start ins game
 
 	Trigger lösen Tutorial aus
 
-	erstes Hindernis im Gang
 	Pop-up Text vor erstem Hindernis
-	roter Teppich
+
 	Fenster? Fensterattrappen?
-	Tür in Halle
-	Kisten, Fässer
-	Weapons
-	Kerzen/ kronleuchter / tische / thron / könig
 
-
-	Tutorial
+	Musik
 
 Flower Meadow:
 
+
+
+	Musik
+
 Bleak Forest:
+
+
+
+	Musik
 
 Arluviors Tower
 
 
+
+
+	Musik
 
 
 
