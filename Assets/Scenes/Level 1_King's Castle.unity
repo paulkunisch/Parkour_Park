@@ -741,7 +741,6 @@ GameObject:
   - component: {fileID: 99789056}
   - component: {fileID: 99789055}
   - component: {fileID: 99789057}
-  - component: {fileID: 99789058}
   m_Layer: 0
   m_Name: GlobalScripts
   m_TagString: Untagged
@@ -791,22 +790,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a744f8435c56a4f46bb57dd02638403d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &99789058
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99789054}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &107575069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2952,7 +2935,7 @@ PrefabInstance:
     - target: {fileID: 1218514018363907360, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 1218514018363907360, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
@@ -3037,12 +3020,12 @@ PrefabInstance:
     - target: {fileID: 1218514018869309626, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000017153761
+      value: -0.000000017153761
       objectReference: {fileID: 0}
     - target: {fileID: 1218514018869309626, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000013446304
+      value: 0.0000000013446304
       objectReference: {fileID: 0}
     - target: {fileID: 1218514019018154507, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
@@ -7116,7 +7099,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99789057}
-        m_TargetAssemblyTypeName: Changescene, Assembly-CSharp
+        m_TargetAssemblyTypeName: General_Changescene, Assembly-CSharp
         m_MethodName: DMT_GoScene
         m_Mode: 5
         m_Arguments:
@@ -7853,7 +7836,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.074529305, y: 0.00000002596767, z: -0.00000000194075, w: 0.99721885}
+  m_LocalRotation: {x: 0.074529305, y: -0.00000002596767, z: 0.00000000194075, w: 0.99721885}
   m_LocalPosition: {x: 8.435, y: 3.5139115, z: -98.51778}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -8034,9 +8017,9 @@ MonoBehaviour:
 
     a
 
-    a
+    b
 
-    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+    c----------------------------------------------------------------'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12846,6 +12829,7 @@ GameObject:
   - component: {fileID: 1741217474}
   - component: {fileID: 1741217473}
   - component: {fileID: 1741217472}
+  - component: {fileID: 1741217475}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -12901,6 +12885,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1741217475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741217471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1511ccae7919cfc46b603b9b337fdc94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1743119506
 PrefabInstance:
   m_ObjectHideFlags: 0
