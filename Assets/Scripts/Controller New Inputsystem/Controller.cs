@@ -11,8 +11,7 @@ public class Controller : MonoBehaviour
     //Inputsystem Controller
     public InputMaster ctrl;
 
-    //Playercontroller
-    //private CharacterController plCtrl;
+  
 
     //Rigidbody of PlayerGO
     private Rigidbody rb;
@@ -141,11 +140,11 @@ public class Controller : MonoBehaviour
         }
     }
    
-    void FixedUpdate()
+   /* void FixedUpdate()
     {
         if (rb.velocity.magnitude > maxSpeed)
         {
             rb.velocity = rb.velocity.normalized * maxSpeed;
         }
-    }
+    }*/
 }

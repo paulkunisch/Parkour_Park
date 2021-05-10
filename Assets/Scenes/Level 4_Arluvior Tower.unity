@@ -3219,7 +3219,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-209680
+  m_Name: pb_Mesh167090
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18667,7 +18667,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.06542646, y: -0.000000034392475, z: 0.0000000022550097, w: 0.9978574}
+  m_LocalRotation: {x: 0.06542646, y: 0.000000034392475, z: -0.0000000022550097, w: 0.9978574}
   m_LocalPosition: {x: 573.1, y: 41.429615, z: 410.7265}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -32974,12 +32974,12 @@ PrefabInstance:
     - target: {fileID: 1218514018363907360, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000017317774
+      value: 0.00000001731777
       objectReference: {fileID: 0}
     - target: {fileID: 1218514018363907360, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 8.83266e-10
+      value: -8.8326585e-10
       objectReference: {fileID: 0}
     - target: {fileID: 1218514018404579183, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
@@ -32999,12 +32999,12 @@ PrefabInstance:
     - target: {fileID: 1218514018869309626, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000017165313
+      value: 0.000000017165323
       objectReference: {fileID: 0}
     - target: {fileID: 1218514018869309626, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000011880442
+      value: -0.000000001188045
       objectReference: {fileID: 0}
     - target: {fileID: 1218514019018154507, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
@@ -36278,7 +36278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 4
-  speed: 10
+  speed: 8
   gravity: 9.81
   playerRotation: 1
   maxSpeed: 15
