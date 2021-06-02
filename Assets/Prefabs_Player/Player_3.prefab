@@ -1160,8 +1160,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7118897959058554609}
-  - component: {fileID: 6323920348297335456}
-  - component: {fileID: 5019697310900404152}
+  - component: {fileID: 8921346255102570975}
   m_Layer: 6
   m_Name: Player_3
   m_TagString: Player
@@ -1186,7 +1185,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6323920348297335456
+--- !u!114 &8921346255102570975
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1195,37 +1194,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6323920348297335463}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12159381d65f4b44295dde2ae12c9028, type: 3}
+  m_Script: {fileID: 11500000, guid: c418bae917615274ba4f07c4ea562bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 5019697310900404152}
-  cam: {fileID: 1218514018404579183}
-  speed: 20
-  jumpheigth: 5
-  jumpamount: 1
-  jumpcount: 0
-  turnSmoothTime: 0.2
-  gravity: -20
-  groundCheck: {fileID: 1218514017627763196}
-  groundDistance: 0.4
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 128
---- !u!143 &5019697310900404152
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6323920348297335463}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2.9
-  m_Radius: 0.35
-  m_SlopeLimit: 60
-  m_StepOffset: 0.7
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.43, z: 0}
+  force: 4
+  speed: 10
+  gravity: 9.81
+  playerRotation: 1
+  maxSpeed: 15
