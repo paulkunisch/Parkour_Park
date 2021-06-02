@@ -11,7 +11,7 @@ public class MainMenu_SetPositionGameobject : MonoBehaviour, ISelectHandler
     [SerializeField] private GameObject GOtoMove;
     private Vector3 basevalue;
     //Do this when the selectable UI object is selected.
-    private void Start()
+    private void Awake()
     {
         basevalue = GOtoMove.transform.position;
     }

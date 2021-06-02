@@ -14,6 +14,7 @@ public class Credits_OpenHyperlinks : MonoBehaviour, IPointerClickHandler
 {
     public bool doesColorChangeOnHover = true;
     public Color hoverColor = new Color(60f / 255f, 120f / 255f, 1f);
+    public Color linkColor = new Color(60f / 255f, 120f / 255f, 1f);
 
     private TextMeshProUGUI pTextMeshPro;
     private Canvas pCanvas;
@@ -34,6 +35,7 @@ public class Credits_OpenHyperlinks : MonoBehaviour, IPointerClickHandler
             pCamera = null;
         else
             pCamera = pCanvas.worldCamera;
+
     }
 
     void LateUpdate()
