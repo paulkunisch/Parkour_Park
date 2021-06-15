@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4357591503160799761}
   m_Layer: 6
   m_Name: Mesh
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,7 +58,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3518534198159994824}
-  m_LocalRotation: {x: 0.08718137, y: 0.000000017140737, z: -0.0000000015000644, w: 0.99619246}
+  m_LocalRotation: {x: 0.08718137, y: 0.000000016629691, z: -0.0000000014553403, w: 0.99619246}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 3518534199118380094}
   m_Layer: 6
   m_Name: GroundCheck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 3518534199963056810}
   m_Layer: 6
   m_Name: Third Person Camera
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -843,7 +843,7 @@ GameObject:
   - component: {fileID: 4525181478919502380}
   m_Layer: 6
   m_Name: PREFAB_Hat_Party
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -922,7 +922,7 @@ GameObject:
   - component: {fileID: 980428468439470509}
   m_Layer: 6
   m_Name: Eyes
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -957,7 +957,7 @@ GameObject:
   - component: {fileID: 4303338088658126885}
   m_Layer: 6
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1052,7 +1052,7 @@ GameObject:
   - component: {fileID: 1261729205108161369}
   m_Layer: 6
   m_Name: we
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1148,7 +1148,7 @@ GameObject:
   - component: {fileID: 958172431884257202}
   m_Layer: 6
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1277,9 +1277,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c418bae917615274ba4f07c4ea562bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 5
-  speed: 10
-  gravity: 9.81
+  groundCheck: {fileID: 3518534199118380094}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 384
+  jumpheigth: 3
+  jumpamount: 2
+  acceleration: 10
   playerRotation: 1
   maxSpeed: 15
 --- !u!54 &-8792698844605522560
@@ -1296,7 +1300,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &8848208016114575485
 GameObject:
@@ -1312,7 +1316,7 @@ GameObject:
   - component: {fileID: 3597040231561964644}
   m_Layer: 6
   m_Name: we (1)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

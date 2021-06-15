@@ -27,21 +27,26 @@ public class Controller : MonoBehaviour
     private Transform cameraMainTransform;
 
     //Check if Jump is currently Performed 
-    private bool grounded = true;
-    //hight of Jumps
     [SerializeField]
-    private float force = 1f;
+    private Transform groundCheck; 
+    private float groundDistance = 0.4f;
+    public LayerMask groundMask;
+    bool isGrounded;
+    public float jumpheigth = 3;
+    public float jumpamount = 2;
+    private float jumpcount;
+
+
     //Movement speed 
     [SerializeField]
-    private float speed = 10f;
+    private float acceleration = 10f;
     [SerializeField]
-    private float gravity = 9.81f;
-    [SerializeField]
-    private float playerRotation = 1f;
+    private float playerRotation = 5f;
     //Replace with your max speed
     [SerializeField]
     private float maxSpeed = 15f;
-    
+    private float currentSpeed = 15f;
+
 
 
 
@@ -49,40 +54,51 @@ public class Controller : MonoBehaviour
     {
         ctrl = new InputMaster();
         cameraMainTransform = Camera.main.transform;
+
         //Inputs für Keyboard in Variable übertragen 
         ctrl.Player.MovementKeyboard.performed += context => inputMove = context.ReadValue<Vector2>();
         ctrl.Player.MovementKeyboard.canceled += context => inputMove = Vector2.zero;
+
         //Inputs von GamePad in Variable übertragen 
         ctrl.Player.MovementGamepad.performed += context => inputMove = context.ReadValue<Vector2>();
         ctrl.Player.MovementGamepad.canceled += context => inputMove = Vector2.zero;
+
         //Sprung ausführen 
         ctrl.Player.Jump.performed += Jump_performed;
         ctrl.Player.Jump.canceled += Jump_canceled;
-        //Interaaktion (noch ohne Funktion)
+
+        //Interaktion (noch ohne Funktion)
         ctrl.Player.Interact.performed += Interact_performed;
         ctrl.Player.Interact.canceled += Interact_canceled;
     }
 
 
 
-
+    // Start is called before the first frame update
+    void Start()
+    {
+        //plCtrl = gameObject.GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
+    }
 
     private void Jump_performed(InputAction.CallbackContext obj)
     {
         //throw new System.NotImplementedException();
-        Debug.Log("jump started");
-        if (grounded)
+        Debug.Log("jump");
+        Debug.Log(jumpcount);
+        if (isGrounded || jumpcount > 1)
         {
-            jumpVelocity += Mathf.Sqrt( force * -3.0f * gravity);    
+            Debug.Log("jump started");
+            //plCtrl.Move(new Vector3(0f, jumpVelocity, 0f)*Time.deltaTime);
+            jumpVelocity = jumpheigth * Time.deltaTime;
+            rb.AddForce(0f, jumpheigth, 0f, ForceMode.Impulse);
+            jumpcount--;
         }
-        jumpVelocity += gravity * Time.deltaTime;
-        //plCtrl.Move(new Vector3(0f, jumpVelocity, 0f)*Time.deltaTime);
-        rb.AddForce(0f, force, 0f,ForceMode.Impulse);
     }
     private void Jump_canceled(InputAction.CallbackContext obj)
     {
         // throw new System.NotImplementedException();
-        Debug.Log("jump canceld");
+        Debug.Log("jump canceled");
     }
     private void Interact_performed(InputAction.CallbackContext obj)
     {
@@ -103,48 +119,61 @@ public class Controller : MonoBehaviour
     {
         ctrl.Player.Disable();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        //plCtrl = gameObject.GetComponent<CharacterController>();
-        rb = GetComponent<Rigidbody>();
 
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if (inputMove != Vector2.zero)
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        if (isGrounded)
         {
-            //transform.position = transform.position + new Vector3(inputMove.x, 0f, inputMove.y)*Time.deltaTime*speed;
-            //rb.AddForce(inputMove.x, 0f, inputMove.y);
-            Vector3 move = new Vector3(inputMove.x, 0f, inputMove.y)*speed;
-            move = cameraMainTransform.forward * move.z + cameraMainTransform.right * move.x;
-            move.y = 0f;
-           // plCtrl.Move(move*Time.deltaTime*speed);
-
-            float targetAngle = Mathf.Atan2(inputMove.x, inputMove.y) * Mathf.Rad2Deg + cameraMainTransform.eulerAngles.y;
-            Quaternion rotation = Quaternion.Euler(0f, targetAngle, 0f);
-            transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * playerRotation);
-            //rb.AddForce(move,ForceMode.Force);
-            transform.position=transform.position+move*Time.deltaTime;
+            jumpcount = jumpamount;
         }
+
+
       
     }
     private void OnCollisonEnter(Collision collision)
     {
+        Debug.Log("hi");
         if (collision.gameObject.tag == "Ground")
         {
-            grounded = true;
-            Debug.Log("Ground");
+            isGrounded = true;
         }
     }
    
-   /* void FixedUpdate()
+    void FixedUpdate()
     {
-        if (rb.velocity.magnitude > maxSpeed)
+        if (inputMove != Vector2.zero)
         {
-            rb.velocity = rb.velocity.normalized * maxSpeed;
+
+            Vector3 move = new Vector3(inputMove.x, 0f, inputMove.y) * acceleration;
+            move = cameraMainTransform.forward * move.z + cameraMainTransform.right * move.x; // include current camera angle in control
+            move.y = 0f;
+
+            float targetAngle = Mathf.Atan2(inputMove.x, inputMove.y) * Mathf.Rad2Deg + cameraMainTransform.eulerAngles.y; // get input for character rotation
+            Quaternion rotation = Quaternion.Euler(0f, targetAngle, 0f); // smooth transition
+            transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * playerRotation);  // apply character rotation
+
+
+            
+            // here we get the current speed - might want to do some Debug.Log() statements and see how fast it gets going, before deciding what to set max speed to!
+            currentSpeed = rb.velocity.magnitude;
+            // Debug.Log(currentSpeed);
+
+            // here we are applying the forces to the rigidbody
+            if (currentSpeed > maxSpeed - (maxSpeed / 4))
+            {
+                // we are going fast enough to limit the speed
+                move = move * (maxSpeed - currentSpeed) / maxSpeed;
+            }
+            else //  we are not moving too fast, add full force
+            {
+                // move = move;
+            }
+            // now we actually add the force
+            rb.AddForce(move, ForceMode.Force);
         }
-    }*/
+
+    }
 }

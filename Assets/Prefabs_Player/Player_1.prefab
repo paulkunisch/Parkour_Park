@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 1517059702787276461}
   m_Layer: 6
   m_Name: Third Person Camera
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -503,7 +503,7 @@ GameObject:
   - component: {fileID: 1517059703562975289}
   m_Layer: 6
   m_Name: GroundCheck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -533,7 +533,7 @@ GameObject:
   - component: {fileID: 1517059703858266094}
   m_Layer: 6
   m_Name: Mesh
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -843,7 +843,7 @@ GameObject:
   - component: {fileID: 5528441709455159025}
   m_Layer: 6
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -938,7 +938,7 @@ GameObject:
   - component: {fileID: 5528441710035927458}
   m_Layer: 6
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1067,9 +1067,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c418bae917615274ba4f07c4ea562bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 2
-  speed: 10
-  gravity: 9.81
+  groundCheck: {fileID: 1517059703562975289}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 384
+  jumpheigth: 3
+  jumpamount: 2
+  acceleration: 10
   playerRotation: 1
   maxSpeed: 15
 --- !u!54 &1409151695580275094
@@ -1086,7 +1090,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &7850847596875754680
 GameObject:
@@ -1101,7 +1105,7 @@ GameObject:
   - component: {fileID: 7850847596877992316}
   m_Layer: 6
   m_Name: Kitsune
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

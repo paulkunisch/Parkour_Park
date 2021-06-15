@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4065214116141358980}
   m_Layer: 6
   m_Name: Mesh
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -183,7 +183,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3803172130829976157}
-  m_LocalRotation: {x: 0.08718136, y: 0.00000001714084, z: -0.0000000015000732, w: 0.99619246}
+  m_LocalRotation: {x: 0.087181345, y: -0.000000017935147, z: 0.0000000015695866,
+    w: 0.99619246}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -257,7 +258,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3803172130936951022}
-  m_LocalRotation: {x: 0.06904669, y: -0.000000017165316, z: 0.0000000011880436, w: 0.99761343}
+  m_LocalRotation: {x: 0.0690467, y: 0.000000017693603, z: -0.0000000012246074, w: 0.99761343}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -320,7 +321,7 @@ GameObject:
   - component: {fileID: 3803172131411777343}
   m_Layer: 6
   m_Name: Third Person Camera
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -333,7 +334,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3803172131411777337}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.0996113, z: -11.715658}
+  m_LocalPosition: {x: 0, y: 3.0996115, z: -11.715658}
   m_LocalScale: {x: 0.6666667, y: 1, z: 0.6666667}
   m_Children:
   - {fileID: 3803172130829976156}
@@ -497,7 +498,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3803172131517922672}
-  m_LocalRotation: {x: 0.050937172, y: 0.0000000021480058, z: -1.0955555e-10, w: 0.9987019}
+  m_LocalRotation: {x: 0.050937172, y: -0.0000000021480058, z: 1.0955555e-10, w: 0.9987019}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -810,7 +811,7 @@ GameObject:
   - component: {fileID: 3803172132245541291}
   m_Layer: 6
   m_Name: GroundCheck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -840,7 +841,7 @@ GameObject:
   - component: {fileID: 687048181932457016}
   m_Layer: 6
   m_Name: Eyes
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -875,7 +876,7 @@ GameObject:
   - component: {fileID: 4587844071863281072}
   m_Layer: 6
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -970,7 +971,7 @@ GameObject:
   - component: {fileID: 1554125428256380620}
   m_Layer: 6
   m_Name: we
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1066,7 +1067,7 @@ GameObject:
   - component: {fileID: 675487241545591335}
   m_Layer: 6
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1195,9 +1196,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c418bae917615274ba4f07c4ea562bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 5
-  speed: 10
-  gravity: 9.81
+  groundCheck: {fileID: 3803172132245541291}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 384
+  jumpheigth: 3
+  jumpamount: 2
+  acceleration: 10
   playerRotation: 1
   maxSpeed: 15
 --- !u!54 &-7091656179249259775
@@ -1214,7 +1219,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &9140313410858075624
 GameObject:
@@ -1230,7 +1235,7 @@ GameObject:
   - component: {fileID: 3889014243187524081}
   m_Layer: 6
   m_Name: we (1)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
