@@ -40,6 +40,7 @@ public class ConnectionManager : MonoBehaviour
         NetworkManager.Singleton.StartClient();
         //Debug.Log("1");
         NetworkManager.Singleton.NetworkConfig.ConnectionData = System.Text.Encoding.ASCII.GetBytes("Pa55w.rd");
+       
         //Debug.Log("2");
        // SceneManager.LoadScene("Level 1mp_King's Castle");
         //Debug.Log("3");
