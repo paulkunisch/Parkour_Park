@@ -4,23 +4,36 @@ using UnityEngine;
 
 public class Transporter : MonoBehaviour
 {
-    public CharacterController CharacterController;
     [SerializeField] private GameObject toGo;
+
+    public GameObject FindClosestEnemy()
+    {
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag("PlayerMainBody");
+        GameObject closest = null;
+        float distance = Mathf.Infinity;
+        Vector3 position = transform.position;
+        foreach (GameObject go in gos)
+        {
+            Vector3 diff = go.transform.position - position;
+            float curDistance = diff.sqrMagnitude;
+            if (curDistance < distance)
+            {
+                closest = go;
+                distance = curDistance;
+            }
+        }
+        return closest;
+    }
+
     private void Start()
     {
-       
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (null != toGo)
-        {
-            CharacterController.enabled = false;
-           // other.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
-           // other.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-            other.transform.position = toGo.transform.position + new Vector3(0, 1, 0);
-            CharacterController.enabled = true;
-        }
-       // Debug.Log("#### DMTTRigggerAnimation Teleporter: " + this.gameObject.name + " <>");
-        //Debug.Log(toGo.transform.position);
+        GameObject character = FindClosestEnemy();
+
+        character.transform.position = character.transform.position + (toGo.transform.position - this.transform.position);
+
     }
 }
