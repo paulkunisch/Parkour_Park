@@ -35,4 +35,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 4_Arluvior Tower.unity
     guid: 7a863dcd3bc625942a65b6ae5a941320
+  - enabled: 1
+    path: Assets/Multiplayer/Multiplayer Scenes/Level 1mp_King's Castle.unity
+    guid: bbe6c0e22bf73044d97440a112fb2172
+  - enabled: 1
+    path: Assets/Multiplayer/Multiplayer Scenes/Level 2mp_Flower Meadow.unity
+    guid: b8fb3604a3f5e1341a0de0884996397f
+  - enabled: 1
+    path: Assets/Multiplayer/Multiplayer Scenes/Level 3mp_Bleak Forest.unity
+    guid: aa551e6c79a7bfb429c732cc7d06b8a9
+  - enabled: 1
+    path: Assets/Multiplayer/Multiplayer Scenes/Level 4mp_Arluvior Tower.unity
+    guid: a6e019eebfcaf994eb76f358bb190e31
   m_configObjects: {}
