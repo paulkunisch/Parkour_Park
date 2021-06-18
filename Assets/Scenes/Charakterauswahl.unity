@@ -819,6 +819,21 @@ PrefabInstance:
       propertyPath: m_text
       value: Character 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3480088871797850096, guid: 818f08d6a56c7c24689562763891e494,
+        type: 3}
+      propertyPath: m_text
+      value: 'Speed: 3
+
+        Jumps: 2
+
+        Acceleration: 1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6092151393578388625, guid: 818f08d6a56c7c24689562763891e494,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 47889718180f352449f692cbbd4516cf,
+        type: 3}
     - target: {fileID: 6374030025390617037, guid: 818f08d6a56c7c24689562763891e494,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1794,6 +1809,21 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 3480088871797850096, guid: 818f08d6a56c7c24689562763891e494,
+        type: 3}
+      propertyPath: m_text
+      value: 'Speed: 2
+
+        Jumps: 2
+
+        Acceleration: 2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6092151393578388625, guid: 818f08d6a56c7c24689562763891e494,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f7cae0abb93971543a3ab30bb9e191c7,
+        type: 3}
     - target: {fileID: 6374030025390617037, guid: 818f08d6a56c7c24689562763891e494,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2949,6 +2979,21 @@ PrefabInstance:
       propertyPath: m_text
       value: Character 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3480088871797850096, guid: 818f08d6a56c7c24689562763891e494,
+        type: 3}
+      propertyPath: m_text
+      value: 'Speed: 2
+
+        Jumps: 1
+
+        Acceleration: 3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6092151393578388625, guid: 818f08d6a56c7c24689562763891e494,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b8f0a301d2b85404f9effb4ab52f5ded,
+        type: 3}
     - target: {fileID: 6374030025390617037, guid: 818f08d6a56c7c24689562763891e494,
         type: 3}
       propertyPath: m_Pivot.x
@@ -3113,6 +3158,15 @@ PrefabInstance:
       propertyPath: m_Navigation.m_SelectOnRight
       value: 
       objectReference: {fileID: 473034756}
+    - target: {fileID: 3480088871797850096, guid: 818f08d6a56c7c24689562763891e494,
+        type: 3}
+      propertyPath: m_text
+      value: 'Speed: 2
+
+        Jumps: 3
+
+        Acceleration: 1'
+      objectReference: {fileID: 0}
     - target: {fileID: 6092151393578388625, guid: 818f08d6a56c7c24689562763891e494,
         type: 3}
       propertyPath: m_Sprite
