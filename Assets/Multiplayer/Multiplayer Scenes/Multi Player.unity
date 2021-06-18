@@ -10582,7 +10582,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1779925717}
+      objectReference: {fileID: 0}
     - target: {fileID: 6673382020590901945, guid: 4a76548a8ed94b74485ed633167adb52,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -46692,7 +46692,6 @@ GameObject:
   - component: {fileID: 1779925713}
   - component: {fileID: 1779925715}
   - component: {fileID: 1779925716}
-  - component: {fileID: 1779925717}
   - component: {fileID: 1779925718}
   m_Layer: 0
   m_Name: Scripts
@@ -46755,18 +46754,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuCanvers: {fileID: 948620179}
   ipAddress: 127.0.0.1
---- !u!114 &1779925717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779925712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d6cd030d933a954a90bab9e88a073fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1779925718
 MonoBehaviour:
   m_ObjectHideFlags: 0

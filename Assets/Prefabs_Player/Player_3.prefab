@@ -1203,9 +1203,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 384
   jumpheigth: 6
-  jumpamount: 1
+  jumpamount: 2
   acceleration: 30
-  playerRotation: 1
+  playerRotation: 10
   maxSpeed: 20
 --- !u!54 &-6788769065206760192
 Rigidbody:

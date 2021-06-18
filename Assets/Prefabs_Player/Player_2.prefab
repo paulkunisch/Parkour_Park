@@ -1284,7 +1284,7 @@ MonoBehaviour:
   jumpheigth: 6
   jumpamount: 2
   acceleration: 12
-  playerRotation: 1.5
+  playerRotation: 10
   maxSpeed: 20
 --- !u!54 &-8792698844605522560
 Rigidbody:
