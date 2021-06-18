@@ -90,14 +90,11 @@ public class Controller : NetworkBehaviour
        
         
 
-        if (IsLocalPlayer)
-        {
-            ThirdPersonCamera.gameObject.SetActive(true);
-        }
-        else
+        if (!IsLocalPlayer)
         {
             ThirdPersonCamera.gameObject.SetActive(false);
         }
+        
     }
 
     private void Jump_performed(InputAction.CallbackContext obj)
