@@ -306,7 +306,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218514018363907367}
-  m_LocalRotation: {x: 0.050937176, y: -0.0000000021480058, z: 1.09555566e-10, w: 0.9987019}
+  m_LocalRotation: {x: 0.050937176, y: 0.0000000021480058, z: -1.0955556e-10, w: 0.9987019}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -546,7 +546,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218514018869309625}
-  m_LocalRotation: {x: 0.0690467, y: -0.000000017693596, z: 0.000000001224607, w: 0.99761343}
+  m_LocalRotation: {x: 0.0690467, y: 0.000000017693603, z: -0.0000000012246074, w: 0.99761343}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -620,7 +620,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218514019018154506}
-  m_LocalRotation: {x: 0.08718135, y: -0.00000001681453, z: 0.0000000014715164, w: 0.99619246}
+  m_LocalRotation: {x: 0.08718137, y: 0.000000017305206, z: -0.000000001514458, w: 0.99619246}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1160,10 +1160,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7118897959058554609}
-  - component: {fileID: 8921346255102570975}
   - component: {fileID: -6788769065206760192}
+  - component: {fileID: 4123665749956285230}
+  - component: {fileID: -6767678124268960529}
   m_Layer: 6
-  m_Name: Player_3
+  m_Name: Player_3mp
   m_TagString: PlayerMainBody
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1186,27 +1187,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8921346255102570975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6323920348297335463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c418bae917615274ba4f07c4ea562bc7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  groundCheck: {fileID: 1218514017627763196}
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 384
-  jumpheigth: 6
-  jumpamount: 1
-  acceleration: 30
-  playerRotation: 1
-  maxSpeed: 20
 --- !u!54 &-6788769065206760192
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1223,3 +1203,72 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &4123665749956285230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6323920348297335463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FixedSendsPerSecond: 20
+  AssumeSyncedSends: 1
+  InterpolatePosition: 1
+  SnapDistance: 10
+  InterpolateServer: 1
+  MinMeters: 0.15
+  MinDegrees: 1.5
+  ExtrapolatePosition: 0
+  MaxSendsToExtrapolate: 5
+  Channel: 
+  EnableRange: 0
+  EnableNonProvokedResendChecks: 0
+  DistanceSendrate:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 20
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 500
+      value: 20
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &-6767678124268960529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6323920348297335463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f350fd5b6c35a4d93c94a190bf8c4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundCheck: {fileID: 1218514017627763196}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 384
+  jumpheigth: 6
+  jumpamount: 1
+  acceleration: 30
+  playerRotation: 1
+  maxSpeed: 20
