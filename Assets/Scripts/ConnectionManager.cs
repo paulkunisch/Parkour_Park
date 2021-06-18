@@ -10,26 +10,26 @@ using MLAPI.Transports.UNET;
 
 public class ConnectionManager : MonoBehaviour
 {
-   public GameObject menuCanvers;
-    private Vector3 startP =new Vector3 (325.91f,23f,295.81f);
+    public GameObject menuCanvers;
+   // public GameObject mainCamera;
+    private Vector3 startP =new Vector3 (325f,24f,302f);
+    private Vector3 startPC = new Vector3(327f,23f,310f);
     public string ipAddress = "127.0.0.1";
     UNetTransport transport;
+   
     public void HostGame()
     {
-        menuCanvers.SetActive(false);
         NetworkManager.Singleton.ConnectionApprovalCallback += ApprovalCheck;
         NetworkManager.Singleton.StartHost(startP,Quaternion.identity);
-       // SceneManager.LoadScene("Level 1mp_King's Castle");
-        
-
+        menuCanvers.SetActive(false);
+       
     }
 
     private void ApprovalCheck(byte[] connectionData, ulong clientID, NetworkManager.ConnectionApprovedDelegate callback)
     {
         bool approve = System.Text.Encoding.ASCII.GetString(connectionData) == "Pa55w.rd";
         Debug.Log("Approving a conection");
-        callback(true, null, approve, startP, Quaternion.identity);
-        
+        callback(true, null, approve, startPC, Quaternion.identity);      
     }
 
     public void JoinGame()
@@ -38,12 +38,7 @@ public class ConnectionManager : MonoBehaviour
         transport.ConnectAddress = ipAddress;
         menuCanvers.SetActive(false);
         NetworkManager.Singleton.StartClient();
-        //Debug.Log("1");
         NetworkManager.Singleton.NetworkConfig.ConnectionData = System.Text.Encoding.ASCII.GetBytes("Pa55w.rd");
-       
-        //Debug.Log("2");
-       // SceneManager.LoadScene("Level 1mp_King's Castle");
-        //Debug.Log("3");
     }
     Vector3 GetRandomSpawn()
     {
@@ -60,12 +55,13 @@ public class ConnectionManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+       
         
     }
 }

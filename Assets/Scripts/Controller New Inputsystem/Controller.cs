@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using MLAPI;
 
 //[RequireComponent(typeof(InputMaster))]
-public class Controller : MonoBehaviour
+public class Controller : NetworkBehaviour
 {
     //Player GO
     private GameObject pl;
@@ -46,7 +47,8 @@ public class Controller : MonoBehaviour
     [SerializeField]
     private float maxSpeed = 15f;
     private float currentSpeed = 15f;
-
+    private GameObject ThirdPersonCamera;
+    
 
 
 
@@ -77,8 +79,25 @@ public class Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //plCtrl = gameObject.GetComponent<CharacterController>();
+        ThirdPersonCamera = GameObject.Find("Third Person Camera");
+        //ThirdPersonCamera = GetComponentInChildren<Camera>().transform;
         rb = GetComponent<Rigidbody>();
+        if (IsClient) 
+        {
+            ThirdPersonCamera.name = "Third Person Camera-c";
+            Debug.Log("Rename tpc" + ThirdPersonCamera.name);
+        }
+       
+        
+
+        if (IsLocalPlayer)
+        {
+            ThirdPersonCamera.gameObject.SetActive(true);
+        }
+        else
+        {
+            ThirdPersonCamera.gameObject.SetActive(false);
+        }
     }
 
     private void Jump_performed(InputAction.CallbackContext obj)
@@ -144,7 +163,7 @@ public class Controller : MonoBehaviour
    
     void FixedUpdate()
     {
-        if (inputMove != Vector2.zero)
+        if (inputMove != Vector2.zero )
         {
 
             Vector3 move = new Vector3(inputMove.x, 0f, inputMove.y) * acceleration;
