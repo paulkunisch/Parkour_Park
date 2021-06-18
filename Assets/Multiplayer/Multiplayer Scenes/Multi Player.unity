@@ -30297,8 +30297,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127632810}
-  m_LocalRotation: {x: 0.06542636, y: 0, z: 0, w: 0.9978574}
-  m_LocalPosition: {x: 1617.7622, y: -92.1944, z: -17.573486}
+  m_LocalRotation: {x: 0.06542641, y: 0.000000026611104, z: -0.0000000017448074, w: 0.9978574}
+  m_LocalPosition: {x: 346.3349, y: 13.922968, z: 298.74643}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -33569,16 +33569,16 @@ MonoBehaviour:
     - Multi Player
     AllowRuntimeSceneChanges: 1
     NetworkPrefabs:
-    - Prefab: {fileID: 5919895695527500642, guid: 66f2153d60564fa48bcf916f5a0ef6eb,
+    - Prefab: {fileID: 5919895695527500642, guid: ab1547a7491ddc249ad0cbf6cae357f8,
         type: 3}
       PlayerPrefab: 0
-    - Prefab: {fileID: 8646423308992667493, guid: b60168bac62ef414b99f3d7595fe096e,
+    - Prefab: {fileID: 8646423308992667493, guid: 78da37056708e054bab07c88122c67f1,
         type: 3}
       PlayerPrefab: 1
-    - Prefab: {fileID: 6323920348297335463, guid: b7ce0249ecabf0a4891e019996554e02,
+    - Prefab: {fileID: 6323920348297335463, guid: 450d270e775790441a067f21ff39d6d4,
         type: 3}
       PlayerPrefab: 0
-    - Prefab: {fileID: 2328117600664823560, guid: 8893111bced45084cb7639efa3146672,
+    - Prefab: {fileID: 2328117600664823560, guid: 63494430a41229b44903a1353eb069b0,
         type: 3}
       PlayerPrefab: 0
     PlayerPrefabHash:
