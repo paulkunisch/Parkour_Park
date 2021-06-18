@@ -1,10 +1,10 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Transporter : MonoBehaviour
+public class onCollideBackToSpawn : MonoBehaviour
 {
-    [SerializeField] private GameObject toGo;
+    private Vector3 RespawnPoint = new Vector3(330f, 21f, 330f);
 
     public GameObject FindClosestCharacter()
     {
@@ -26,14 +26,10 @@ public class Transporter : MonoBehaviour
         return closest;
     }
 
-    private void Start()
-    {
-    }
     private void OnTriggerEnter(Collider other)
     {
         GameObject character = FindClosestCharacter();
 
-        character.transform.position = character.transform.position + (toGo.transform.position - this.transform.position);
-
+        character.transform.position = RespawnPoint;
     }
 }
