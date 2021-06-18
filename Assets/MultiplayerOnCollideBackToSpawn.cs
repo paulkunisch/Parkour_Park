@@ -32,10 +32,7 @@ public class MultiplayerOnCollideBackToSpawn : NetworkBehaviour
         GameObject character = FindClosestCharacter();
 
         Debug.Log(character);
-        if (IsLocalPlayer)
-        {
             character.transform.position = RespawnPoint;
-        }
 
     }
 }
