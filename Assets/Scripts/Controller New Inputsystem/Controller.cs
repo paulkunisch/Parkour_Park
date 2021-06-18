@@ -47,7 +47,7 @@ public class Controller : NetworkBehaviour
     [SerializeField]
     private float maxSpeed = 15f;
     private float currentSpeed = 15f;
-    private GameObject ThirdPersonCamera;
+    //private GameObject ThirdPersonCamera;
     
 
 
@@ -79,21 +79,19 @@ public class Controller : NetworkBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ThirdPersonCamera = GameObject.Find("Third Person Camera");
+       // ThirdPersonCamera = GameObject.Find("Third Person Camera");
         //ThirdPersonCamera = GetComponentInChildren<Camera>().transform;
         rb = GetComponent<Rigidbody>();
-        if (IsClient) 
+        /*if (IsClient) 
         {
             ThirdPersonCamera.name = "Third Person Camera-c";
             Debug.Log("Rename tpc" + ThirdPersonCamera.name);
-        }
-       
-        
+        } 
 
         if (!IsLocalPlayer)
         {
             ThirdPersonCamera.gameObject.SetActive(false);
-        }
+        }*/
         
     }
 

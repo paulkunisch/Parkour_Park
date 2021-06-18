@@ -58,8 +58,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3518534198159994824}
-  m_LocalRotation: {x: 0.087181345, y: -0.000000018199374, z: 0.0000000015927103,
-    w: 0.99619246}
+  m_LocalRotation: {x: 0.08718137, y: 0.000000016622186, z: -0.0000000014546837, w: 0.99619246}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1284,11 +1283,11 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 384
-  jumpheigth: 3
+  jumpheigth: 6
   jumpamount: 2
-  acceleration: 10
-  playerRotation: 1
-  maxSpeed: 15
+  acceleration: 12
+  playerRotation: 1.5
+  maxSpeed: 20
 --- !u!54 &-8792698844605522560
 Rigidbody:
   m_ObjectHideFlags: 0
