@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5504509, g: 0.90913594, b: 0.8708989, a: 1}
+  m_IndirectSpecularColor: {r: 0.5504509, g: 0.909136, b: 0.87089896, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1287,7 +1287,7 @@ PrefabInstance:
     - target: {fileID: 4102504259756454115, guid: d6551415ef560ca49b89bf5a2053e199,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Level 2_Lava Lake
+      value: Level_2_Lava Lake
       objectReference: {fileID: 0}
     - target: {fileID: 4102504259756454115, guid: d6551415ef560ca49b89bf5a2053e199,
         type: 3}

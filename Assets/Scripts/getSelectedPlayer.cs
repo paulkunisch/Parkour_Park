@@ -18,10 +18,10 @@ public class getSelectedPlayer : MonoBehaviour
         Player2 = GameObject.Find("Player_2");
         Player3 = GameObject.Find("Player_3");
         Player4 = GameObject.Find("Player_4");
-        Player1.gameObject.SetActive(false);
-        Player2.gameObject.SetActive(false);
-        Player3.gameObject.SetActive(false);
-        Player4.gameObject.SetActive(false);
+        if (Player1.activeSelf) Player1.gameObject.SetActive(false);
+        if (Player2.activeSelf) Player2.gameObject.SetActive(false);
+        if (Player3.activeSelf) Player3.gameObject.SetActive(false);
+        if (Player4.activeSelf) Player4.gameObject.SetActive(false);
 
         selectedPlayer = PlayerPrefs.GetInt("chosenPlayer");
         Debug.Log("Player is " + selectedPlayer);
@@ -30,7 +30,6 @@ public class getSelectedPlayer : MonoBehaviour
             case 1:
                 Player1.gameObject.SetActive(true);
                 break;
-
             case 2:
                 Player2.gameObject.SetActive(true);
                 break;
@@ -39,6 +38,11 @@ public class getSelectedPlayer : MonoBehaviour
                 break;
             case 4:
                 Player4.gameObject.SetActive(true);
+                break;
+
+
+            default:
+                Player2.gameObject.SetActive(true);
                 break;
         }        
 

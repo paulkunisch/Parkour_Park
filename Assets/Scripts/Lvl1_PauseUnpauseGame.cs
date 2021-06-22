@@ -24,7 +24,7 @@ public class Lvl1_PauseUnpauseGame : MonoBehaviour
         {
             if (pauseMenu.scene.IsValid()) { pauseMenu.SetActive(true); } // ui with pause elements
             if (character.scene.IsValid()) { character.SetActive(false); } // character controller deactivated, so you dont move in pause screen
-            if (hud.scene.IsValid()) { hud.SetActive(false); } // hud deactived in pause
+            if (hud.scene.IsValid()) { hud.SetActive(false); } // hud deactivated in pause
             Time.timeScale = 0f;
             // clear selected Object
             EventSystem.current.SetSelectedGameObject(null);

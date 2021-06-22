@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class SwitchLevel : MonoBehaviour
 {
+    [SerializeField]
+private string whichScene;
+
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(whichScene);
     }
 }

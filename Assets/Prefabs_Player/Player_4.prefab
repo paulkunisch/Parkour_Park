@@ -134,9 +134,9 @@ MonoBehaviour:
     m_Bits: 384
   jumpheigth: 6
   jumpamount: 2
-  acceleration: 9
-  playerRotation: 10
-  maxSpeed: 30
+  acceleration: 15
+  playerRotation: 4
+  maxSpeed: 25
 --- !u!54 &1539680039737812948
 Rigidbody:
   m_ObjectHideFlags: 0

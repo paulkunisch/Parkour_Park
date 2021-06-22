@@ -43,7 +43,7 @@ public class ControllerMp : NetworkBehaviour
     private float acceleration = 10f;
     [SerializeField]
     private float playerRotation = 5f;
-    //Replace with your max speed
+
     [SerializeField]
     private float maxSpeed = 15f;
     private float currentSpeed = 15f;
@@ -97,13 +97,11 @@ public class ControllerMp : NetworkBehaviour
 
     private void Jump_performed(InputAction.CallbackContext obj)
     {
-        //throw new System.NotImplementedException();
         Debug.Log("jump");
         Debug.Log(jumpcount);
         if (isGrounded || jumpcount > 1)
         {
             Debug.Log("jump started");
-            //plCtrl.Move(new Vector3(0f, jumpVelocity, 0f)*Time.deltaTime);
             jumpVelocity = jumpheigth * Time.deltaTime;
             rb.AddForce(0f, jumpheigth, 0f, ForceMode.Impulse);
             jumpcount--;
@@ -111,18 +109,15 @@ public class ControllerMp : NetworkBehaviour
     }
     private void Jump_canceled(InputAction.CallbackContext obj)
     {
-        // throw new System.NotImplementedException();
-        Debug.Log("jump canceled");
+
     }
     private void Interact_performed(InputAction.CallbackContext obj)
     {
-        //throw new System.NotImplementedException();
         Debug.Log("Interaction performed");
     }
     private void Interact_canceled(InputAction.CallbackContext obj)
     {
-        //throw new System.NotImplementedException();
-        Debug.Log("Interaction canceld");
+
     }
     private void OnEnable()
     {
@@ -173,7 +168,6 @@ public class ControllerMp : NetworkBehaviour
             
             // here we get the current speed - might want to do some Debug.Log() statements and see how fast it gets going, before deciding what to set max speed to!
             currentSpeed = rb.velocity.magnitude;
-            // Debug.Log(currentSpeed);
 
             // here we are applying the forces to the rigidbody
             if (currentSpeed > maxSpeed - (maxSpeed / 4))

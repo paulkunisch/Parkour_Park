@@ -43,14 +43,10 @@ public class Controller : MonoBehaviour
     private float acceleration = 10f;
     [SerializeField]
     private float playerRotation = 5f;
-    //Replace with your max speed
+
     [SerializeField]
     private float maxSpeed = 15f;
     private float currentSpeed = 15f;
-    //private GameObject ThirdPersonCamera;
-    
-
-
 
     private void Awake()
     {
@@ -79,31 +75,16 @@ public class Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // ThirdPersonCamera = GameObject.Find("Third Person Camera");
-        //ThirdPersonCamera = GetComponentInChildren<Camera>().transform;
         rb = GetComponent<Rigidbody>();
-        /*if (IsClient) 
-        {
-            ThirdPersonCamera.name = "Third Person Camera-c";
-            Debug.Log("Rename tpc" + ThirdPersonCamera.name);
-        } 
-
-        if (!IsLocalPlayer)
-        {
-            ThirdPersonCamera.gameObject.SetActive(false);
-        }*/
-        
     }
 
     private void Jump_performed(InputAction.CallbackContext obj)
     {
-        //throw new System.NotImplementedException();
         Debug.Log("jump");
         Debug.Log(jumpcount);
         if (isGrounded || jumpcount > 1)
         {
             Debug.Log("jump started");
-            //plCtrl.Move(new Vector3(0f, jumpVelocity, 0f)*Time.deltaTime);
             jumpVelocity = jumpheigth * Time.deltaTime;
             rb.AddForce(0f, jumpheigth, 0f, ForceMode.Impulse);
             jumpcount--;
@@ -111,19 +92,15 @@ public class Controller : MonoBehaviour
     }
     private void Jump_canceled(InputAction.CallbackContext obj)
     {
-        // throw new System.NotImplementedException();
-        Debug.Log("jump canceled");
     }
     private void Interact_performed(InputAction.CallbackContext obj)
     {
-        //throw new System.NotImplementedException();
         Debug.Log("Interaction performed");
     }
     private void Interact_canceled(InputAction.CallbackContext obj)
     {
-        //throw new System.NotImplementedException();
-        Debug.Log("Interaction canceld");
     }
+
     private void OnEnable()
     {
         ctrl.Player.Enable();
