@@ -12,7 +12,7 @@ public class ConnectionManager : MonoBehaviour
 {
     public GameObject menuCanvers;
    // public GameObject mainCamera;
-    private Vector3 startP =new Vector3 (325f,24f,302f);
+    private Vector3 startP = new Vector3 (325f,24f,302f);
     private Vector3 startPC = new Vector3(327f,23f,310f);
     public string ipAddress = "127.0.0.1";
     UNetTransport transport;

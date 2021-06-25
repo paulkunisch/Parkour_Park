@@ -15,14 +15,11 @@ public class ControllerMp : NetworkBehaviour
     //Respawn
     private int deathzone;
     private int respawnPoint;
-    [SerializeField]
+
     private GameObject respawnPoint1;
-    [SerializeField]
-    public GameObject respawnPoint2;
-    [SerializeField]
-    public GameObject respawnPoint3;
-    [SerializeField]
-    public GameObject respawnPoint4;
+    private GameObject respawnPoint2;
+    private GameObject respawnPoint3;
+    private GameObject respawnPoint4;
 
 
     //Rigidbody of PlayerGO

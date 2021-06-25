@@ -1217,8 +1217,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NetworkInstanceId: 0
-  PrefabHash: 14266912335466868551
-  PrefabHashGenerator: Player_3mp
+  PrefabHash: 12396322984092796416
+  PrefabHashGenerator: Player_3
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
 --- !u!114 &4123665749956285230
@@ -1281,6 +1281,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0f350fd5b6c35a4d93c94a190bf8c4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  respawnPoint1: {fileID: 0}
+  respawnPoint2: {fileID: 0}
+  respawnPoint3: {fileID: 0}
+  respawnPoint4: {fileID: 0}
   groundCheck: {fileID: 1218514017627763196}
   groundMask:
     serializedVersion: 2
