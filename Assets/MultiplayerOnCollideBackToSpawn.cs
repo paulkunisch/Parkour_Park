@@ -11,11 +11,14 @@ public class MultiplayerOnCollideBackToSpawn : NetworkBehaviour
     {
         GameObject[] gos;
         gos = GameObject.FindGameObjectsWithTag("PlayerMainBody");
+        Debug.Log(gos.Length);
+        if (gos.Length == 1) return gos[0];
         GameObject closest = null;
         float distance = Mathf.Infinity;
         Vector3 position = transform.position;
         foreach (GameObject go in gos)
         {
+           
             if (go.gameObject.GetComponent<NetworkBehaviour>().IsLocalPlayer)
             {
                 Vector3 diff = go.transform.position - position;
