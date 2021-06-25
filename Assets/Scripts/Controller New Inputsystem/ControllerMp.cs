@@ -9,6 +9,7 @@ public class ControllerMp : NetworkBehaviour
 {
     //Player GO
     private GameObject pl;
+
     //Inputsystem Controller
     public InputMaster ctrl;
 
@@ -21,6 +22,9 @@ public class ControllerMp : NetworkBehaviour
     private GameObject respawnPoint3;
     private GameObject respawnPoint4;
 
+    // POWER-UPs
+    [SerializeField]
+    private GameObject boost;
 
     //Rigidbody of PlayerGO
     private Rigidbody rb;
@@ -29,13 +33,11 @@ public class ControllerMp : NetworkBehaviour
     //Saves Inputs for Movement
     private Vector2 inputMove;
 
-    //Vector for Jumps
-    private float jumpVelocity;
 
     //Camera Position
     private Transform cameraMainTransform;
 
-    //Check if Jump is currently Performed 
+    //Jump
     [SerializeField]
     private Transform groundCheck;
     private float groundDistance = 0.4f;
@@ -44,7 +46,6 @@ public class ControllerMp : NetworkBehaviour
     public float jumpheigth = 3;
     public float jumpamount = 2;
     private float jumpcount;
-
 
     //Movement speed 
     [SerializeField]
@@ -120,7 +121,6 @@ public class ControllerMp : NetworkBehaviour
         if (isGrounded || jumpcount > 1)
         {
             Debug.Log("jump started");
-            jumpVelocity = jumpheigth * Time.deltaTime;
             rb.AddForce(0f, jumpheigth, 0f, ForceMode.Impulse);
             jumpcount--;
         }
@@ -191,6 +191,16 @@ public class ControllerMp : NetworkBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             isGrounded = true;
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("POWER-UPs"))
+        {
+            jumpamount += 1;
+            boost.SetActive(true);
+            other.gameObject.SetActive(false);
         }
     }
 

@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 
 //[RequireComponent(typeof(InputMaster))]
 public class Controller : MonoBehaviour
 {
-    //Player GO
-    private GameObject pl;
     //Inputsystem Controller
     public InputMaster ctrl;
 
-  
+    // POWER-UPs
+    [SerializeField]
+    private GameObject boost;
 
     //Rigidbody of PlayerGO
     private Rigidbody rb;
@@ -21,8 +22,6 @@ public class Controller : MonoBehaviour
     //Saves Inputs for Movement
     private Vector2 inputMove;
 
-    //Vector for Jumps
-    private float jumpVelocity;
 
     //Camera Position
     private Transform cameraMainTransform;
@@ -76,6 +75,17 @@ public class Controller : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        // set boost
+        if(SceneManager.GetActiveScene().name == "Level 1_King's Castle")
+        {
+            PlayerPrefs.SetInt("boost", 0);
+        }
+        else if (PlayerPrefs.GetInt("boost") == 1)
+        {
+            jumpamount += 1;
+            boost.SetActive(true);
+        }
     }
 
     private void Jump_performed(InputAction.CallbackContext obj)
@@ -85,7 +95,6 @@ public class Controller : MonoBehaviour
         if (isGrounded || jumpcount > 1)
         {
             Debug.Log("jump started");
-            jumpVelocity = jumpheigth * Time.deltaTime;
             rb.AddForce(0f, jumpheigth, 0f, ForceMode.Impulse);
             jumpcount--;
         }
@@ -120,10 +129,9 @@ public class Controller : MonoBehaviour
         {
             jumpcount = jumpamount;
         }
-
-
       
     }
+
     private void OnCollisonEnter(Collision collision)
     {
         Debug.Log("hi");
@@ -132,7 +140,18 @@ public class Controller : MonoBehaviour
             isGrounded = true;
         }
     }
-   
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("POWER-UPs"))
+        {
+            PlayerPrefs.SetInt("boost", 1);
+            jumpamount += 1;
+            boost.SetActive(true);
+            other.gameObject.SetActive(false);
+        }
+    }
+
     void FixedUpdate()
     {
         if (inputMove != Vector2.zero )

@@ -12,7 +12,8 @@ public class setNewSpawnPoint : MonoBehaviour
     private GameObject uiMessage;
     [SerializeField]
     private int uiSecondsEnabled = 5;
-    // Start is called before the first frame update
+
+
     private void OnTriggerEnter(Collider other)
     {
         PlayerPrefs.SetInt("deathzone", deathzoneY);

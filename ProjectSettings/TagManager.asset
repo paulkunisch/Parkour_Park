@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - PlayerMainBody
   - SpawnPL2
+  - POWER-UPs
   layers:
   - Default
   - TransparentFX
