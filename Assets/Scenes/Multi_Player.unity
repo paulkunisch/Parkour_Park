@@ -1430,7 +1430,7 @@ PrefabInstance:
     - target: {fileID: 6673382020590901944, guid: 4a76548a8ed94b74485ed633167adb52,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 62
+      value: 50.8
       objectReference: {fileID: 0}
     - target: {fileID: 6673382020590901944, guid: 4a76548a8ed94b74485ed633167adb52,
         type: 3}
@@ -24208,7 +24208,7 @@ PrefabInstance:
     - target: {fileID: 6673382020590901944, guid: 4a76548a8ed94b74485ed633167adb52,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 102.439026
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6673382020590901944, guid: 4a76548a8ed94b74485ed633167adb52,
         type: 3}
@@ -24750,7 +24750,7 @@ PrefabInstance:
     - target: {fileID: 6673382020590901944, guid: 4a76548a8ed94b74485ed633167adb52,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 62
+      value: 50.8
       objectReference: {fileID: 0}
     - target: {fileID: 6673382020590901944, guid: 4a76548a8ed94b74485ed633167adb52,
         type: 3}
@@ -33568,7 +33568,6 @@ MonoBehaviour:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 1290334440}
     RegisteredScenes:
-    - Multi Player
     - Multi_Player
     AllowRuntimeSceneChanges: 1
     NetworkPrefabs:
@@ -33577,10 +33576,10 @@ MonoBehaviour:
       PlayerPrefab: 0
     - Prefab: {fileID: 8646423308992667493, guid: 78da37056708e054bab07c88122c67f1,
         type: 3}
-      PlayerPrefab: 1
+      PlayerPrefab: 0
     - Prefab: {fileID: 6323920348297335463, guid: 450d270e775790441a067f21ff39d6d4,
         type: 3}
-      PlayerPrefab: 0
+      PlayerPrefab: 1
     - Prefab: {fileID: 2328117600664823560, guid: 63494430a41229b44903a1353eb069b0,
         type: 3}
       PlayerPrefab: 0
@@ -33600,7 +33599,7 @@ MonoBehaviour:
     EnsureNetworkVariableLengthSafety: 0
     EnableSceneManagement: 1
     ForceSamePrefabs: 1
-    UsePrefabSync: 0
+    UsePrefabSync: 1
     RecycleNetworkIds: 1
     NetworkIdRecycleDelay: 120
     RpcHashSize: 0
@@ -33613,7 +33612,7 @@ MonoBehaviour:
     00000000:
       type: {class: NullableBoolSerializable, ns: MLAPI.Configuration, asm: Unity.Multiplayer.MLAPI.Runtime}
       data:
-        Value: 12396322984092796417
+        Value: 14266912335466868551
 --- !u!4 &1290334442
 Transform:
   m_ObjectHideFlags: 0
