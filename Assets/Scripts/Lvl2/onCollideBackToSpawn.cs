@@ -4,7 +4,20 @@ using UnityEngine;
 
 public class onCollideBackToSpawn : MonoBehaviour
 {
-    private Vector3 RespawnPoint = new Vector3(330f, 21f, 330f);
+    //Respawn
+    private int respawnPoint;
+
+    [SerializeField]
+    public GameObject respawnPoint1;
+    [SerializeField]
+    public GameObject respawnPoint2;
+    [SerializeField]
+
+    public void Start()
+    {
+        // Respawn
+        PlayerPrefs.SetInt("respawnPoint", 1);
+    }
 
     public GameObject FindClosestCharacter()
     {
@@ -30,6 +43,16 @@ public class onCollideBackToSpawn : MonoBehaviour
     {
         GameObject character = FindClosestCharacter();
 
-        character.transform.position = RespawnPoint;
+        respawnPoint = PlayerPrefs.GetInt("respawnPoint");
+
+        switch (respawnPoint)
+        {
+            case 1:
+                character.transform.position = respawnPoint1.transform.position;
+                break;
+            case 2:
+                character.transform.position = respawnPoint2.transform.position;
+                break;
+        }
     }
 }
