@@ -96,11 +96,11 @@ public class ControllerMp : NetworkBehaviour
         ThirdPersonCamera = GameObject.Find("Third Person Camera");
 
         rb = GetComponent<Rigidbody>();
-        /*if (IsClient) 
+        if (IsClient) 
         {
             ThirdPersonCamera.name = "Third Person Camera-c";
             Debug.Log("Rename tpc" + ThirdPersonCamera.name);
-        } */
+        } 
 
         if (!IsLocalPlayer)
         {
