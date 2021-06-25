@@ -12,7 +12,18 @@ public class ControllerMp : NetworkBehaviour
     //Inputsystem Controller
     public InputMaster ctrl;
 
-  
+    //Respawn
+    private int deathzone;
+    private int respawnPoint;
+    [SerializeField]
+    private Vector3 respawnPoint1 = new Vector3((float)329.96, (float)19.9, (float)317.19);
+    [SerializeField]
+    private Vector3 respawnPoint2 = new Vector3((float)-11.86, (float)19.9, (float)14);
+    [SerializeField]
+    private Vector3 respawnPoint3 = new Vector3((float)1612.5, (float)39.8, (float)1454.15);
+    [SerializeField]
+    private Vector3 respawnPoint4 = new Vector3((float)624.63, (float)107.94, (float)462.94);
+
 
     //Rigidbody of PlayerGO
     private Rigidbody rb;
@@ -29,7 +40,7 @@ public class ControllerMp : NetworkBehaviour
 
     //Check if Jump is currently Performed 
     [SerializeField]
-    private Transform groundCheck; 
+    private Transform groundCheck;
     private float groundDistance = 0.4f;
     public LayerMask groundMask;
     bool isGrounded;
@@ -48,7 +59,7 @@ public class ControllerMp : NetworkBehaviour
     private float maxSpeed = 15f;
     private float currentSpeed = 15f;
     private GameObject ThirdPersonCamera;
-    
+
 
 
 
@@ -72,6 +83,9 @@ public class ControllerMp : NetworkBehaviour
         //Interaktion (noch ohne Funktion)
         ctrl.Player.Interact.performed += Interact_performed;
         ctrl.Player.Interact.canceled += Interact_canceled;
+
+        PlayerPrefs.SetInt("deathzone", 0);
+        PlayerPrefs.SetInt("respawnPoint", 1);
     }
 
 
@@ -80,19 +94,21 @@ public class ControllerMp : NetworkBehaviour
     void Start()
     {
         ThirdPersonCamera = GameObject.Find("Third Person Camera");
-       
+
         rb = GetComponent<Rigidbody>();
-        if (IsClient) 
+        /*if (IsClient) 
         {
             ThirdPersonCamera.name = "Third Person Camera-c";
             Debug.Log("Rename tpc" + ThirdPersonCamera.name);
-        } 
+        } */
 
         if (!IsLocalPlayer)
         {
             ThirdPersonCamera.gameObject.SetActive(false);
         }
-        
+
+        deathzone = PlayerPrefs.GetInt("deathzone");
+        respawnPoint = PlayerPrefs.GetInt("respawnPoint");
     }
 
     private void Jump_performed(InputAction.CallbackContext obj)
@@ -139,8 +155,36 @@ public class ControllerMp : NetworkBehaviour
             jumpcount = jumpamount;
         }
 
+        if (IsLocalPlayer)
+        {
+            deathzone = PlayerPrefs.GetInt("deathzone");
+            if (transform.position.y < deathzone)
+            {
+                respawnPoint = PlayerPrefs.GetInt("respawnPoint");
+                switch (respawnPoint)
+                {
+                    case 1:
+                        transform.position = respawnPoint1;
+                        break;
+                    case 2:
+                        transform.position = respawnPoint2;
+                        break;
+                    case 3:
+                        transform.position = respawnPoint3;
+                        break;
+                    case 4:
+                        transform.position = respawnPoint4;
+                        break;
 
-      
+
+                    default:
+                        transform.position = respawnPoint1;
+                        break;
+                }
+            }
+
+        }
+
     }
     private void OnCollisonEnter(Collision collision)
     {
@@ -150,10 +194,10 @@ public class ControllerMp : NetworkBehaviour
             isGrounded = true;
         }
     }
-   
+
     void FixedUpdate()
     {
-        if (inputMove != Vector2.zero )
+        if (inputMove != Vector2.zero)
         {
 
             Vector3 move = new Vector3(inputMove.x, 0f, inputMove.y) * acceleration;
@@ -165,7 +209,7 @@ public class ControllerMp : NetworkBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * playerRotation);  // apply character rotation
 
 
-            
+
             // here we get the current speed - might want to do some Debug.Log() statements and see how fast it gets going, before deciding what to set max speed to!
             currentSpeed = rb.velocity.magnitude;
 
