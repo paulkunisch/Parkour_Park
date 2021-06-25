@@ -16,12 +16,15 @@ public class MultiplayerOnCollideBackToSpawn : NetworkBehaviour
         Vector3 position = transform.position;
         foreach (GameObject go in gos)
         {
-            Vector3 diff = go.transform.position - position;
-            float curDistance = diff.sqrMagnitude;
-            if (curDistance < distance)
+            if (go.gameObject.GetComponent<NetworkBehaviour>().IsLocalPlayer)
             {
-                closest = go;
-                distance = curDistance;
+                Vector3 diff = go.transform.position - position;
+                float curDistance = diff.sqrMagnitude;
+                if (curDistance < distance)
+                {
+                    closest = go;
+                    distance = curDistance;
+                }
             }
         }
         return closest;
@@ -32,7 +35,6 @@ public class MultiplayerOnCollideBackToSpawn : NetworkBehaviour
         GameObject character = FindClosestCharacter();
 
         Debug.Log(character);
-            character.transform.position = RespawnPoint;
-
+        character.transform.position = RespawnPoint;
     }
 }
