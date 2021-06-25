@@ -16,13 +16,13 @@ public class ControllerMp : NetworkBehaviour
     private int deathzone;
     private int respawnPoint;
     [SerializeField]
-    private Vector3 respawnPoint1 = new Vector3((float)329.96, (float)19.9, (float)317.19);
+    private GameObject respawnPoint1;
     [SerializeField]
-    private Vector3 respawnPoint2 = new Vector3((float)-11.86, (float)19.9, (float)14);
+    public GameObject respawnPoint2;
     [SerializeField]
-    private Vector3 respawnPoint3 = new Vector3((float)1612.5, (float)39.8, (float)1454.15);
+    public GameObject respawnPoint3;
     [SerializeField]
-    private Vector3 respawnPoint4 = new Vector3((float)624.63, (float)107.94, (float)462.94);
+    public GameObject respawnPoint4;
 
 
     //Rigidbody of PlayerGO
@@ -107,14 +107,19 @@ public class ControllerMp : NetworkBehaviour
             ThirdPersonCamera.gameObject.SetActive(false);
         }
 
+        // Respawn
         deathzone = PlayerPrefs.GetInt("deathzone");
         respawnPoint = PlayerPrefs.GetInt("respawnPoint");
+
+        // RespawnPoints
+        respawnPoint1 = GameObject.Find("respawnPoint1");
+        respawnPoint2 = GameObject.Find("respawnPoint2");
+        respawnPoint3 = GameObject.Find("respawnPoint3");
+        respawnPoint4 = GameObject.Find("respawnPoint4");
     }
 
     private void Jump_performed(InputAction.CallbackContext obj)
     {
-        Debug.Log("jump");
-        Debug.Log(jumpcount);
         if (isGrounded || jumpcount > 1)
         {
             Debug.Log("jump started");
@@ -160,25 +165,22 @@ public class ControllerMp : NetworkBehaviour
             deathzone = PlayerPrefs.GetInt("deathzone");
             if (transform.position.y < deathzone)
             {
+                Debug.Log(deathzone);
                 respawnPoint = PlayerPrefs.GetInt("respawnPoint");
+                Debug.Log(respawnPoint);
                 switch (respawnPoint)
                 {
                     case 1:
-                        transform.position = respawnPoint1;
+                        transform.position = respawnPoint1.transform.position;
                         break;
                     case 2:
-                        transform.position = respawnPoint2;
+                        transform.position = respawnPoint2.transform.position;
                         break;
                     case 3:
-                        transform.position = respawnPoint3;
+                        transform.position = respawnPoint3.transform.position;
                         break;
                     case 4:
-                        transform.position = respawnPoint4;
-                        break;
-
-
-                    default:
-                        transform.position = respawnPoint1;
+                        transform.position = respawnPoint4.transform.position;
                         break;
                 }
             }
