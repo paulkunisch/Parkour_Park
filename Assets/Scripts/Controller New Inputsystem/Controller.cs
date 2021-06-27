@@ -158,8 +158,8 @@ public class Controller : MonoBehaviour
 
         else if (other.gameObject.CompareTag("Water"))
         {
-            maxSpeed = saveMaxSpeed / 1.5f;
-            acceleration = saveAcceleration / 1.5f;
+            maxSpeed = 3;
+            acceleration = 10;
         }
 
     }
