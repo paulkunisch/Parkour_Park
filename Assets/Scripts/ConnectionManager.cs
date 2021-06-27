@@ -14,9 +14,9 @@ public class ConnectionManager : MonoBehaviour
     //Stores multiplayer staring menu 
     public GameObject menuCanvers;
    //Stores staring point of the host
-    private Vector3 sPointHost = new Vector3 (3902.48f,22f,6156.41f);
+    private Vector3 sPointHost = new Vector3 (-95.67f,200f,-2306.7f);
     //Stores staring point of the client
-    private Vector3 sPointClient = new Vector3(-96.84f,22f,-2300.25f);
+    private Vector3 sPointClient = new Vector3(-95f,200f,-2303.25f);
     public string ipAddress = "127.0.0.1";
     UNetTransport transport;
    

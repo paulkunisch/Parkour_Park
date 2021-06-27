@@ -18,6 +18,9 @@ public class ControllerMp : NetworkBehaviour
     private GameObject respawnPoint2;
     private GameObject respawnPoint3;
     private GameObject respawnPoint4;
+    private GameObject respawnPoint5;
+    private GameObject respawnPoint6;
+    private GameObject respawnPoint7;
 
     // POWER-UPs
     [SerializeField]
@@ -115,10 +118,14 @@ public class ControllerMp : NetworkBehaviour
         respawnPoint = PlayerPrefs.GetInt("respawnPoint");
 
         // RespawnPoints
-        respawnPoint1 = GameObject.Find("StartPoint Laver Lake");
+        respawnPoint1 = GameObject.Find("respawnPoint1");
         respawnPoint2 = GameObject.Find("respawnPoint2");
-        respawnPoint3 = GameObject.Find("StartPoint Arluvior Tower");
+        respawnPoint3 = GameObject.Find("respawnPoint3");
         respawnPoint4 = GameObject.Find("respawnPoint4");
+        respawnPoint5 = GameObject.Find("respawnPoint5");
+        respawnPoint6 = GameObject.Find("respawnPoint6");
+        respawnPoint7 = GameObject.Find("respawnPoint7");
+
 
         // save values for swamp-area
         saveMaxSpeed = maxSpeed;
@@ -197,6 +204,15 @@ public class ControllerMp : NetworkBehaviour
                         transform.position = respawnPoint3.transform.position;
                         break;
                     case 4:
+                        transform.position = respawnPoint4.transform.position;
+                        break;
+                    case 5:
+                        transform.position = respawnPoint4.transform.position;
+                        break;
+                    case 6:
+                        transform.position = respawnPoint4.transform.position;
+                        break;
+                    case 7:
                         transform.position = respawnPoint4.transform.position;
                         break;
                 }

@@ -14,7 +14,7 @@ public class Transporter : MonoBehaviour
         {
             GameObject character = FindClosestCharacter(); // Player-Collider is not on the parent object, so we have to differentiate
 
-            character.transform.position = character.transform.position + (toGo.transform.position - this.transform.position);
+            character.transform.position = toGo.transform.position + new Vector3(0f, 1f, 0f);
         }
     }
 
