@@ -30,7 +30,7 @@ PrefabInstance:
     - target: {fileID: 8630320066164723793, guid: 6edf355ec0de5f1449b4f74535f0cbc3,
         type: 3}
       propertyPath: m_Name
-      value: Artifact_1
+      value: Artifact_1 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8975356244451445483, guid: 6edf355ec0de5f1449b4f74535f0cbc3,
         type: 3}

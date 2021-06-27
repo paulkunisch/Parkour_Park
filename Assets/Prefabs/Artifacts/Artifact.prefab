@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1386177043820147059}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Artifact
-  m_TagString: Untagged
+  m_TagString: POWER-UPs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 2831944202056526358}
   - component: {fileID: 6823032256405380232}
   - component: {fileID: 3149786645667987543}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

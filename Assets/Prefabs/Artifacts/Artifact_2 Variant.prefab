@@ -85,7 +85,7 @@ PrefabInstance:
     - target: {fileID: 4322379204080446976, guid: 7461233b7730468448bd8d0ffc5d5fd7,
         type: 3}
       propertyPath: m_Name
-      value: Artifact_2
+      value: Artifact_2 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7461233b7730468448bd8d0ffc5d5fd7, type: 3}
