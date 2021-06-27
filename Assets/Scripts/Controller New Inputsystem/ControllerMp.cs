@@ -47,16 +47,22 @@ public class ControllerMp : NetworkBehaviour
     public float jumpamount = 2;
     private float jumpcount;
 
+    // Death-Sound
+    private AudioSource[] Sounds; // using Workaround here since objects are spawned in as prefabs with multiple audiosources.
+                                  // make sure jump is first audiosource and dying sound is second.
+
     //Movement speed 
     [SerializeField]
     private float acceleration = 10f;
     [SerializeField]
     private float playerRotation = 5f;
-
     [SerializeField]
     private float maxSpeed = 15f;
     private float currentSpeed = 15f;
     private GameObject ThirdPersonCamera;
+
+    private float saveMaxSpeed;
+    private float saveAcceleration;
 
 
 
@@ -66,22 +72,23 @@ public class ControllerMp : NetworkBehaviour
         ctrl = new InputMaster();
         cameraMainTransform = Camera.main.transform;
 
-        //Inputs für Keyboard in Variable übertragen 
+        // Inputs Keyboard save into variables
         ctrl.Player.MovementKeyboard.performed += context => inputMove = context.ReadValue<Vector2>();
         ctrl.Player.MovementKeyboard.canceled += context => inputMove = Vector2.zero;
 
-        //Inputs von GamePad in Variable übertragen 
+        // Inputs GamePad save into variables 
         ctrl.Player.MovementGamepad.performed += context => inputMove = context.ReadValue<Vector2>();
         ctrl.Player.MovementGamepad.canceled += context => inputMove = Vector2.zero;
 
-        //Sprung ausführen 
+        // Jump action
         ctrl.Player.Jump.performed += Jump_performed;
         ctrl.Player.Jump.canceled += Jump_canceled;
 
-        //Interaktion (noch ohne Funktion)
+        // Interaction (reserved for future use)
         ctrl.Player.Interact.performed += Interact_performed;
         ctrl.Player.Interact.canceled += Interact_canceled;
 
+        // reset current spawnPoint
         PlayerPrefs.SetInt("deathzone", 0);
         PlayerPrefs.SetInt("respawnPoint", 1);
     }
@@ -114,14 +121,28 @@ public class ControllerMp : NetworkBehaviour
         respawnPoint2 = GameObject.Find("respawnPoint2");
         respawnPoint3 = GameObject.Find("respawnPoint3");
         respawnPoint4 = GameObject.Find("respawnPoint4");
+
+        // save values for swamp-area
+        saveMaxSpeed = maxSpeed;
+        saveAcceleration = acceleration;
+
+        // Sound
+
+        Sounds = GetComponents<AudioSource>();
     }
 
     private void Jump_performed(InputAction.CallbackContext obj)
     {
         if (isGrounded || jumpcount > 1)
         {
+            // do jump
             Debug.Log("jump started");
             rb.AddForce(0f, jumpheigth, 0f, ForceMode.Impulse);
+
+            // Sound
+            Sounds[0].Play();
+
+
             jumpcount--;
         }
     }
@@ -162,6 +183,7 @@ public class ControllerMp : NetworkBehaviour
             deathzone = PlayerPrefs.GetInt("deathzone");
             if (transform.position.y < deathzone)
             {
+                Sounds[1].Play(); 
                 Debug.Log(deathzone);
                 respawnPoint = PlayerPrefs.GetInt("respawnPoint");
                 Debug.Log(respawnPoint);
@@ -201,9 +223,24 @@ public class ControllerMp : NetworkBehaviour
             boost.SetActive(true);
             other.gameObject.SetActive(false);
         }
+        else if (other.gameObject.CompareTag("Water"))
+        {
+            maxSpeed = 3;
+            acceleration = 10;
+        }
+
     }
 
-    void FixedUpdate()
+    private void OnTriggerExit(Collider other)
+{
+    if (other.gameObject.CompareTag("Water"))
+    {
+        maxSpeed = saveMaxSpeed;
+        acceleration = saveAcceleration;
+    }
+}
+
+void FixedUpdate()
     {
         if (inputMove != Vector2.zero)
         {

@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 //[RequireComponent(typeof(InputMaster))]
 public class Controller : MonoBehaviour
 {
-    //Inputsystem Controller
+    // Inputsystem Controller
     public InputMaster ctrl;
 
     // POWER-UPs
@@ -19,14 +19,14 @@ public class Controller : MonoBehaviour
     private Rigidbody rb;
 
 
-    //Saves Inputs for Movement
+    // Saves Inputs for Movement
     private Vector2 inputMove;
 
 
-    //Camera Position
+    // Camera Position
     private Transform cameraMainTransform;
 
-    //Check if Jump is currently Performed 
+    // Jumps 
     [SerializeField]
     private Transform groundCheck; 
     private float groundDistance = 0.4f;
@@ -36,37 +36,40 @@ public class Controller : MonoBehaviour
     public float jumpamount = 2;
     private float jumpcount;
 
+    // Jump-Sound
+    [SerializeField]
+    private AudioClip jumpSound; // Add your Audio Clip on this gameobject as well
 
-    //Movement speed 
+    // Movement speed 
     [SerializeField]
     private float acceleration = 10f;
     [SerializeField]
     private float playerRotation = 5f;
-
     [SerializeField]
     private float maxSpeed = 15f;
     private float currentSpeed = 15f;
     private float saveMaxSpeed;
     private float saveAcceleration;
 
+
     private void Awake()
     {
         ctrl = new InputMaster();
         cameraMainTransform = Camera.main.transform;
 
-        //Inputs für Keyboard in Variable übertragen 
+        // Inputs Keyboard save into variables
         ctrl.Player.MovementKeyboard.performed += context => inputMove = context.ReadValue<Vector2>();
         ctrl.Player.MovementKeyboard.canceled += context => inputMove = Vector2.zero;
 
-        //Inputs von GamePad in Variable übertragen 
+        // Inputs GamePad save into variables 
         ctrl.Player.MovementGamepad.performed += context => inputMove = context.ReadValue<Vector2>();
         ctrl.Player.MovementGamepad.canceled += context => inputMove = Vector2.zero;
 
-        //Sprung ausführen 
+        // Jump action
         ctrl.Player.Jump.performed += Jump_performed;
         ctrl.Player.Jump.canceled += Jump_canceled;
 
-        //Interaktion (noch ohne Funktion)
+        // Interaction (reserved for future use)
         ctrl.Player.Interact.performed += Interact_performed;
         ctrl.Player.Interact.canceled += Interact_canceled;
     }
@@ -89,18 +92,26 @@ public class Controller : MonoBehaviour
             boost.SetActive(true);
         }
 
+        // save values for swamp-area
         saveMaxSpeed = maxSpeed;
         saveAcceleration = acceleration;
+
+        // Jump-Sound
+        GetComponent<AudioSource>().clip = jumpSound;
     }
 
     private void Jump_performed(InputAction.CallbackContext obj)
     {
-        Debug.Log("jump");
-        Debug.Log(jumpcount);
+        // check if jump is allowed
         if (isGrounded || jumpcount > 1)
         {
+            // do jump
             Debug.Log("jump started");
             rb.AddForce(0f, jumpheigth, 0f, ForceMode.Impulse);
+
+            // Sound
+            GetComponent<AudioSource>().Play();
+
             jumpcount--;
         }
     }

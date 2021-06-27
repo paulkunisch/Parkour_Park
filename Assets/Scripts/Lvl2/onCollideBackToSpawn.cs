@@ -11,12 +11,17 @@ public class onCollideBackToSpawn : MonoBehaviour
     public GameObject respawnPoint1;
     [SerializeField]
     public GameObject respawnPoint2;
+    
     [SerializeField]
+    private AudioClip deathsound; // Add your Audio Clip on this gameobject as well
 
     public void Start()
     {
         // Respawn
         PlayerPrefs.SetInt("respawnPoint", 1);
+
+        // Respawn-Sound
+        GetComponent<AudioSource>().clip = deathsound;
     }
 
     public GameObject FindClosestCharacter()
@@ -54,5 +59,9 @@ public class onCollideBackToSpawn : MonoBehaviour
                 character.transform.position = respawnPoint2.transform.position;
                 break;
         }
+
+        // Sound
+        GetComponent<AudioSource>().Play();
+
     }
 }
