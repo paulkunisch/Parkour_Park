@@ -137,14 +137,6 @@ public class Controller : MonoBehaviour
       
     }
 
-    private void OnCollisonEnter(Collision collision)
-    {
-        Debug.Log("hi");
-        if (collision.gameObject.tag == "Ground")
-        {
-            isGrounded = true;
-        }
-    }
 
     void OnTriggerEnter(Collider other)
     {
