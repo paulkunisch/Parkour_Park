@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Author: David Hasenhüttl
 public class Lvl4_Checkpoint_Return : MonoBehaviour
 {
     [SerializeField]
@@ -13,7 +14,7 @@ public class Lvl4_Checkpoint_Return : MonoBehaviour
     [SerializeField]
     private GameObject respawnPoint4;
 
-    private int checkpoint;
+    private int checkpoint; // save value from playerprefs
 
     private void Start()
     {
@@ -28,7 +29,7 @@ public class Lvl4_Checkpoint_Return : MonoBehaviour
 
             checkpoint = PlayerPrefs.GetInt("lvl4checkpoint");
 
-            switch (checkpoint)
+            switch (checkpoint) // select position according to playerprefs value
             {
                 case 1:
                     other.transform.position = respawnPoint1.transform.position;

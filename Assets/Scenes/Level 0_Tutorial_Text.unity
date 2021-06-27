@@ -376,11 +376,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'As the most famous Adventurer in all of Kha''enria, you receive a letter
-    of invitation by none other than the king himself.
+  m_text: 'As the most famous Adventurer in all of Mora, you receive a letter of
+    invitation by none other than the king himself.
 
-    You pack your things
-    and head towards the castle...'
+    You pack your things and
+    head towards the castle...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b70b8e42e4cab6f47971dd30620be2d5, type: 2}
   m_sharedMaterial: {fileID: -1251569257038698471, guid: b70b8e42e4cab6f47971dd30620be2d5,

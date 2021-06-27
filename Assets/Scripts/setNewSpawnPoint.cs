@@ -24,7 +24,7 @@ public class setNewSpawnPoint : MonoBehaviour
         StartCoroutine(LateCall());
     }
 
-    IEnumerator LateCall()
+    IEnumerator LateCall() // hyperthreaded wait
     {
         yield return new WaitForSeconds(uiSecondsEnabled);
 
