@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Author: David Hasenhüttl
 public class setNewSpawnPoint : MonoBehaviour
 {
     [SerializeField]
@@ -13,7 +14,7 @@ public class setNewSpawnPoint : MonoBehaviour
     [SerializeField]
     private int uiSecondsEnabled = 5;
 
-
+    // used for multiplayer, setting variables for next respawn
     private void OnTriggerEnter(Collider other)
     {
         PlayerPrefs.SetInt("deathzone", deathzoneY);

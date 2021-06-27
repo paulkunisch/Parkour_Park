@@ -4,12 +4,9 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using MLAPI;
 
-//[RequireComponent(typeof(InputMaster))]
+// Author: David Hasenhüttl, Paul Kunisch
 public class ControllerMp : NetworkBehaviour
 {
-    //Player GO
-    private GameObject pl;
-
     //Inputsystem Controller
     public InputMaster ctrl;
 
@@ -61,6 +58,7 @@ public class ControllerMp : NetworkBehaviour
     private float currentSpeed = 15f;
     private GameObject ThirdPersonCamera;
 
+    // used to save original speed values once we slow down in swamp water
     private float saveMaxSpeed;
     private float saveAcceleration;
 
@@ -152,7 +150,7 @@ public class ControllerMp : NetworkBehaviour
     }
     private void Interact_performed(InputAction.CallbackContext obj)
     {
-        Debug.Log("Interaction performed");
+        Debug.Log("Interaction performed"); // saved for future use
     }
     private void Interact_canceled(InputAction.CallbackContext obj)
     {
@@ -217,13 +215,13 @@ public class ControllerMp : NetworkBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("POWER-UPs"))
+        if (other.gameObject.CompareTag("POWER-UPs")) // increase jump amount of players by 1
         {
             jumpamount += 1;
             boost.SetActive(true);
             other.gameObject.SetActive(false);
         }
-        else if (other.gameObject.CompareTag("Water"))
+        else if (other.gameObject.CompareTag("Water")) // swamp water slows us down
         {
             maxSpeed = 3;
             acceleration = 10;
@@ -233,7 +231,7 @@ public class ControllerMp : NetworkBehaviour
 
     private void OnTriggerExit(Collider other)
 {
-    if (other.gameObject.CompareTag("Water"))
+    if (other.gameObject.CompareTag("Water")) // return to original speed
     {
         maxSpeed = saveMaxSpeed;
         acceleration = saveAcceleration;
@@ -258,16 +256,16 @@ void FixedUpdate()
             // here we get the current speed - might want to do some Debug.Log() statements and see how fast it gets going, before deciding what to set max speed to!
             currentSpeed = rb.velocity.magnitude;
 
-            // here we are applying the forces to the rigidbody
-            if (currentSpeed > maxSpeed - (maxSpeed / 4))
+            // here we are applying the forces to the rigidbody. 
+            //if (currentSpeed > maxSpeed - (maxSpeed / 4)) // linear acceleration until 75% of speed
             {
                 // we are going fast enough to limit the speed
                 move = move * (maxSpeed - currentSpeed) / maxSpeed;
             }
-            else //  we are not moving too fast, add full force
+            /*else //  we are not moving too fast, add full force
             {
-                // move = move;
-            }
+                 move = move;
+            }*/
             // now we actually add the force
             rb.AddForce(move, ForceMode.Force);
         }
