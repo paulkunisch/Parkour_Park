@@ -207,13 +207,13 @@ public class ControllerMp : NetworkBehaviour
                         transform.position = respawnPoint4.transform.position;
                         break;
                     case 5:
-                        transform.position = respawnPoint4.transform.position;
+                        transform.position = respawnPoint5.transform.position;
                         break;
                     case 6:
-                        transform.position = respawnPoint4.transform.position;
+                        transform.position = respawnPoint6.transform.position;
                         break;
                     case 7:
-                        transform.position = respawnPoint4.transform.position;
+                        transform.position = respawnPoint7.transform.position;
                         break;
                 }
             }
