@@ -1,12 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8309102373435275731
+--- !u!1001 &5688060842651594395
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2900122440674519160, guid: 50a75f27f46bcf8428dc1c6380cd973e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ce0357f70ef89b34eafc8f3b88c724aa, type: 2}
+    - target: {fileID: 2900122440674519160, guid: 50a75f27f46bcf8428dc1c6380cd973e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0e2602966686dae4a82f1eccaff3f04c, type: 2}
+    - target: {fileID: 2900122440674519160, guid: 50a75f27f46bcf8428dc1c6380cd973e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: b7a7b0a01feaa7048ad4eb3649c77c13, type: 2}
+    - target: {fileID: 2900122440674519160, guid: 50a75f27f46bcf8428dc1c6380cd973e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4f2e97600f0d8874db6e846c5f574e35, type: 2}
     - target: {fileID: 4743609725816071282, guid: 50a75f27f46bcf8428dc1c6380cd973e,
         type: 3}
       propertyPath: m_RootOrder
@@ -15,17 +35,17 @@ PrefabInstance:
     - target: {fileID: 4743609725816071282, guid: 50a75f27f46bcf8428dc1c6380cd973e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.178834
+      value: 4.1310883
       objectReference: {fileID: 0}
     - target: {fileID: 4743609725816071282, guid: 50a75f27f46bcf8428dc1c6380cd973e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 23.06
+      value: 24.3
       objectReference: {fileID: 0}
     - target: {fileID: 4743609725816071282, guid: 50a75f27f46bcf8428dc1c6380cd973e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 310.4384
+      value: 341.95932
       objectReference: {fileID: 0}
     - target: {fileID: 4743609725816071282, guid: 50a75f27f46bcf8428dc1c6380cd973e,
         type: 3}
