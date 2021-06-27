@@ -187,7 +187,6 @@ public class ControllerMp : NetworkBehaviour
     }
     private void OnCollisonEnter(Collision collision)
     {
-        Debug.Log("hi");
         if (collision.gameObject.tag == "Ground")
         {
             isGrounded = true;
