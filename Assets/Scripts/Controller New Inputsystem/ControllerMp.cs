@@ -117,9 +117,9 @@ public class ControllerMp : NetworkBehaviour
         respawnPoint = PlayerPrefs.GetInt("respawnPoint");
 
         // RespawnPoints
-        respawnPoint1 = GameObject.Find("respawnPoint1");
+        respawnPoint1 = GameObject.Find("StartPoint Laver Lake");
         respawnPoint2 = GameObject.Find("respawnPoint2");
-        respawnPoint3 = GameObject.Find("respawnPoint3");
+        respawnPoint3 = GameObject.Find("StartPoint Arluvior Tower");
         respawnPoint4 = GameObject.Find("respawnPoint4");
 
         // save values for swamp-area

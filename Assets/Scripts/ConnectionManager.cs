@@ -7,20 +7,23 @@ using System;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 using MLAPI.Transports.UNET;
+//Author: Paul Kunisch
 
 public class ConnectionManager : MonoBehaviour
 {
+    //Stores multiplayer staring menu 
     public GameObject menuCanvers;
-   // public GameObject mainCamera;
-    private Vector3 startP = new Vector3 (325f,24f,302f);
-    private Vector3 startPC = new Vector3(327f,23f,310f);
+   //Stores staring point of the host
+    private Vector3 sPointHost = new Vector3 (3902.48f,22f,6156.41f);
+    //Stores staring point of the client
+    private Vector3 sPointClient = new Vector3(-96.84f,22f,-2300.25f);
     public string ipAddress = "127.0.0.1";
     UNetTransport transport;
    
     public void HostGame()
     {
         NetworkManager.Singleton.ConnectionApprovalCallback += ApprovalCheck;
-        NetworkManager.Singleton.StartHost(startP,Quaternion.identity);
+        NetworkManager.Singleton.StartHost(sPointHost, Quaternion.identity);
         menuCanvers.SetActive(false);
        
     }
@@ -29,7 +32,7 @@ public class ConnectionManager : MonoBehaviour
     {
         bool approve = System.Text.Encoding.ASCII.GetString(connectionData) == "Pa55w.rd";
         Debug.Log("Approving a conection");
-        callback(true, null, approve, startPC, Quaternion.identity);      
+        callback(true, null, approve, sPointClient, Quaternion.identity);      
     }
 
     public void JoinGame()
@@ -40,28 +43,9 @@ public class ConnectionManager : MonoBehaviour
         NetworkManager.Singleton.StartClient();
         NetworkManager.Singleton.NetworkConfig.ConnectionData = System.Text.Encoding.ASCII.GetBytes("Pa55w.rd");
     }
-    Vector3 GetRandomSpawn()
-    {
-        float x = Random.Range(-5f, 5f);
-        float y = Random.Range(-5f, 5f);
-        float z = Random.Range(-5f, 5f);
-        return new Vector3(x, y, z);
-    }
+   
     public void ConectToIPAddress(string newAddress)
     {
         this.ipAddress = newAddress;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-        
     }
 }

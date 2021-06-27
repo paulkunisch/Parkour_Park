@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Author: Paul Kunisch 
 public class getSelectedPlayer : MonoBehaviour
 {
+    //Variable stores the number of the selected character 
     private int selectedPlayer;
+    //Game Objects of the characters
     private GameObject Player1;
     private GameObject Player2;
     private GameObject Player3;
@@ -14,6 +16,7 @@ public class getSelectedPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Create instances and make sure all characters are disabled
         Player1 = GameObject.Find("Player_1");
         Player2 = GameObject.Find("Player_2");
         Player3 = GameObject.Find("Player_3");
@@ -23,8 +26,10 @@ public class getSelectedPlayer : MonoBehaviour
         if (Player3.activeSelf) Player3.gameObject.SetActive(false);
         if (Player4.activeSelf) Player4.gameObject.SetActive(false);
 
+        //Only the character that is entered in the PlayerPrefs
         selectedPlayer = PlayerPrefs.GetInt("chosenPlayer");
-        Debug.Log("Player is " + selectedPlayer);
+        //Check charakter number in PlayerPrefs and set this charakter aktiv if nothing is choosen set number to 2
+        Debug.Log("Selected character has number: " + selectedPlayer);
         switch (selectedPlayer)
         {
             case 1:
