@@ -10,7 +10,7 @@ public class Transporter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("PlayerMainBody"))
+        if (other.gameObject.CompareTag("Player"))
         {
             GameObject character = FindClosestCharacter(); // Player-Collider is not on the parent object, so we have to differentiate
 
