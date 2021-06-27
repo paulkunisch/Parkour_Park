@@ -17,11 +17,15 @@ public class setNewSpawnPoint : MonoBehaviour
     // used for multiplayer, setting variables for next respawn
     private void OnTriggerEnter(Collider other)
     {
-        PlayerPrefs.SetInt("deathzone", deathzoneY);
-        PlayerPrefs.SetInt("respawnPoint", respawn);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            PlayerPrefs.SetInt("deathzone", deathzoneY);
+            PlayerPrefs.SetInt("respawnPoint", respawn);
 
-        uiMessage.SetActive(true);
-        StartCoroutine(LateCall());
+            uiMessage.SetActive(true);
+            StartCoroutine(LateCall());
+        }
+        
     }
 
     IEnumerator LateCall() // hyperthreaded wait
