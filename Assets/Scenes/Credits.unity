@@ -365,6 +365,32 @@ MonoBehaviour:
     Flower Meadow: <link="https://freesound.org/people/Audionautics/sounds/133901/">Lava
     Loop</link>
 
+    Sound Effect Jump Fat Character:
+
+    <link="https://freesound.org/people/Artmasterrich/sounds/345437/">Jump</link>
+
+    Sound
+    Effect Game Over:
+
+    <link="https://freesound.org/people/noirenex/sounds/159408/">Game
+    Over</link>
+
+    Sound Effect Fall Lava:
+
+    <link="https://freesound.org/people/Iceofdoom/sounds/385819/">Lava
+    Fall</link>
+
+    Sound Effect Jump Normal:
+
+    <link="https://freesound.org/people/acebrian/sounds/380471/">Jump
+    Normal</link>
+
+    Sound Effect Squeaking Door:
+
+    <link="https://freesound.org/people/blimp66/sounds/464019/">Door
+    Squeaking</link>
+
+
 
 
 
@@ -374,10 +400,11 @@ MonoBehaviour:
 
     3D Models:
 
-    Chain for Chandelier: <link="https://www.cgtrader.com/items/1894251/download-page">chain
-    3d</link>
+    Chain for Chandelier:
+    <link="https://www.cgtrader.com/items/1894251/download-page">chain 3d</link>
 
-    Model for Chandelier: <link="https://www.turbosquid.com/3d-models/medieval-candle-chandelier-3d-model-1389671">Medieval
+    Model
+    for Chandelier: <link="https://www.turbosquid.com/3d-models/medieval-candle-chandelier-3d-model-1389671">Medieval
     Candle Chandelier 3D Model</link>
 
     Model for Swamp:  <link="https://www.emaceart.com/#latest_package/">Mid
@@ -515,10 +542,10 @@ MonoBehaviour:
   ShowLines: 0
   ShowMeshBounds: 0
   ShowTextBounds: 0
-  ObjectStats: 'Characters: 673   Words: 91   Spaces: 101   Sprites: 0   Links: 14
+  ObjectStats: 'Characters: 862   Words: 121   Spaces: 132   Sprites: 0   Links:
+    19
 
-    Lines:
-    31   Pages: 1'
+    Lines: 42   Pages: 1'
 --- !u!114 &336657042
 MonoBehaviour:
   m_ObjectHideFlags: 0
