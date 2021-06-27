@@ -362,6 +362,10 @@ MonoBehaviour:
     Bleak Forest: <link="https://freesound.org/people/LilyMarie/sounds/108241/">Lilymarie
     Swamp</link>
 
+    Flower Meadow: <link="https://freesound.org/people/Audionautics/sounds/133901/">Lava
+    Loop</link>
+
+
 
 
     Assets:
@@ -379,14 +383,21 @@ MonoBehaviour:
     Model for Swamp:  <link="https://www.emaceart.com/#latest_package/">Mid
     Poly Stylized Swamp Remastered</link>
 
+    Models for Environment Lvl 2: <link="https://assetstore.unity.com/packages/3d/environments/fantasy/mega-fantasy-props-pack-87811/">
+
+    Mega
+    Fantasy Props Pack</link>
+
+    Model for PowerUps: <link="https://www.turbosquid.com/3d-models/games-cube-3d-1171982">Game
+    Cubes 3D</link
+
 
 
     Codeexamples:
 
 
 
-    Jonathon Hopkins:
-    <link="https://gitlab.com/jonnohopkins/tmp-hyperlinks/-/blob/master/Assets/OpenHyperlinks.cs">Open
+    Jonathon Hopkins: <link="https://gitlab.com/jonnohopkins/tmp-hyperlinks/-/blob/master/Assets/OpenHyperlinks.cs">Open
     Hyperlinks</link>
 
     TechCor (unity forum): <link="https://forum.unity.com/threads/non-interactable-ui-element-e-g-button-not-skipped-by-navigation.285500/#post-2522528">Skip
@@ -504,10 +515,10 @@ MonoBehaviour:
   ShowLines: 0
   ShowMeshBounds: 0
   ShowTextBounds: 0
-  ObjectStats: 'Characters: 558   Words: 72   Spaces: 80   Sprites: 0   Links: 11
+  ObjectStats: 'Characters: 679   Words: 92   Spaces: 101   Sprites: 0   Links: 13
 
     Lines:
-    26   Pages: 1'
+    31   Pages: 1'
 --- !u!114 &336657042
 MonoBehaviour:
   m_ObjectHideFlags: 0
