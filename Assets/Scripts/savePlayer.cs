@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//Author: Paul Kunisch 
+
+// Author: Paul Kunisch
 public class savePlayer : MonoBehaviour
-{
-    //Get the character which was clickt on and Save its number in PlayerPrefs
+{  
+    // select the current Player in Singleplayer from PlayerPrefs
     public void setPlayer1()
     {
         Debug.Log("aktuller charakter ist Spieler 1");
@@ -25,5 +26,15 @@ public class savePlayer : MonoBehaviour
         Debug.Log("aktuller charakter ist Spieler 4");
         PlayerPrefs.SetInt("chosenPlayer", 4);
     }
-   
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }

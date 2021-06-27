@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+// Author: David Hasenhüttl
 public class Lvl1_PauseUnpauseGame : MonoBehaviour
 {
-    public GameObject pauseMenu; 
-    public GameObject character; 
-    public GameObject hud;
-    public GameObject MenuFirstButton;
+    public GameObject pauseMenu; // select a canvas holding your pause menu
+    public GameObject character; // here we selected a parent GO named "characterposition" which holds all the respective character prefabs (to turn on/off in between pause screen)
+    public GameObject hud;       // disable HUD messages ("go to the king", ...)
+    public GameObject MenuFirstButton; // enable controller support, select a button in your pause menu canvas
 
     void Update()
     {

@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 //Author: Paul Kunisch 
 public class getSelectedPlayer : MonoBehaviour
 {
     //Variable stores the number of the selected character 
     private int selectedPlayer;
+
     //Game Objects of the characters
     private GameObject Player1;
     private GameObject Player2;

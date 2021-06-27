@@ -1,7 +1,9 @@
 using UnityEngine;
 using System.Collections;
 
-
+// Author: toddbrentlinger
+// https://github.com/toddbrentlinger/Unity-First-Person-Shooter/blob/master/James%20Bond%20First%20Person%20Shooter/Assets/Asset%20Store/TextMesh%20Pro/Examples%20&%20Extras/Scripts/TMP_TextInfoDebugTool.cs
+// This script is used to annotate TextMeshPro Text as a HTML hyperlink
 namespace TMPro.Examples
 {
 

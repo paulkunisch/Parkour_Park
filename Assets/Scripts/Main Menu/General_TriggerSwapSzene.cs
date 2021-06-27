@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Author: David Hasenhüttl
+// put this script on a trigger GO, once you enter the trigger & tutorial is finished,
+// you'll get a message asking you to confirm a scene change
+// press the button shown in the ui message and you go to the scene
 public class General_TriggerSwapSzene : MonoBehaviour
 {
     [SerializeField] 
-    private string whichScene;
+    private string whichScene; // scene to go to
     [SerializeField] 
-    private GameObject UI_text;
+    private GameObject UI_text; // ui text "press space or gamepad(start) to change to the next level"
     [SerializeField] 
-    private bool noTutorial;
+    private bool noTutorial; // if there is no tutorial in this level = select true
 
     private bool isin = false;
 

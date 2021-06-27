@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-public class OptionMenu : MonoBehaviour
+// Author: David Hasenhüttl
+public class OptionMenu : MonoBehaviour // this script handles the audio of the game through a slider in the option menu
 {
     [SerializeField]
     private AudioMixer audioMixer;

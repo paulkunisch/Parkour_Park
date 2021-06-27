@@ -6,11 +6,14 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class Menu_Controller_Navigation : MonoBehaviour
+// Author: David Hasenhüttl
+public class Menu_Controller_Navigation : MonoBehaviour 
 {
-    public string whichScene;
-    public GameObject mainMenuFirstButton;
-    private InputMaster myinputs;
+    // this script is used to leave multiplayer with escape-button or start(gamepad)
+
+    public string whichScene;               // choose szene to go to with a string
+    public GameObject mainMenuFirstButton;  // enable controller support, select button
+    private InputMaster myinputs;           // new Input System
 
     private void Awake()
     {
@@ -25,7 +28,7 @@ public class Menu_Controller_Navigation : MonoBehaviour
         // set a new selected Object
         EventSystem.current.SetSelectedGameObject(mainMenuFirstButton);
 
-        if (SceneManager.GetActiveScene().name == "MainMenu")
+        if (SceneManager.GetActiveScene().name == "MainMenu") // set boost back to default once entering the MainMenu
         {
             PlayerPrefs.SetInt("boost", 0);
         }
@@ -41,13 +44,7 @@ public class Menu_Controller_Navigation : MonoBehaviour
         myinputs.Disable();
     }
 
-
-    public void Update()
-    {
-
-    }
-
-    private void Escape()
+    private void Escape() // go to scene on esc or start(gamepad) pressed
     {
             {
                 Debug.Log("DMTButtonScene: SceneManagement go to > " + whichScene);

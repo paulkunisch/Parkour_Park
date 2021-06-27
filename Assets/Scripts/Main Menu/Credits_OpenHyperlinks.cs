@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 using TMPro;
 
 // Original Author: Jonathan Hopkins, https://gitlab.com/jonnohopkins
+// used to select TMP_Pro Text as hyperlinks through html tag addition
 
 // somewhat based upon the TextMesh Pro example script: TMP_TextSelector_B
 [RequireComponent(typeof(TextMeshProUGUI))]

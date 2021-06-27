@@ -3,6 +3,12 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
+// Author: TechCor (forum.unity.com)
+// https://forum.unity.com/threads/non-interactable-ui-element-e-g-button-not-skipped-by-navigation.285500/#post-2522528
+// This script allows to skip non-interactable-buttons in the ui.
+// we choose to not implement non-interactable-buttons in the current release yet.
+// it was planned to only allow the levelselect after finishing the game at least once,
+// however we thought it would be easier to test our game without this limitation
 public class MainMenu_skipNonInteractableButtons : MonoBehaviour, ISelectHandler
 {
     private Selectable m_Selectable;

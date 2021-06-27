@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Menu_Tutorial_HUD_enable_disable : MonoBehaviour
+// Author: David Hasenhüttl
+public class Menu_Tutorial_HUD_enable_disable : MonoBehaviour // this script handles the turn on/shut down of Tutorial elements using triggerActions
 {
     [SerializeField]
     private GameObject triggerEnterEnable;

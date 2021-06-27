@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Author: David Hasenhüttl
 public class Lvl4_checkpoint_reached : MonoBehaviour
 {
     [SerializeField]
-    private int checkPointNumber;
+    private int checkPointNumber; // which checkpoint do you wanna save with the gameobject where this script is on
     [SerializeField]
-    private GameObject uiMessage;
+    private GameObject uiMessage; // select ui text, example "reached Checkpoint!"
     [SerializeField]
-    private int uiSecondsEnabled = 5;
+    private int uiSecondsEnabled = 5; // how long the ui stays on top of the HUD
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "PlayerMainBody")
+        if (other.gameObject.tag == "PlayerMainBody") // only the parent GO of the player should collide
         {
             Debug.Log("Checkpoint reached with Player: " + other);
 

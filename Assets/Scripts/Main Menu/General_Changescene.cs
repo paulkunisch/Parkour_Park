@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Author: Alexander Nischelwitzer
 public class General_Changescene : MonoBehaviour
 {
 
