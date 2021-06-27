@@ -10,6 +10,9 @@ private string whichScene;
 
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(whichScene);
+        if (other.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(whichScene);
+        }
     }
 }

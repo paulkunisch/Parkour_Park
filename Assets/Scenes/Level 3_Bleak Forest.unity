@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 2bd8959f5fbd3644aa33af1a155fc147, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.4964124, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.36297253, g: 0.5661971, b: 0.84371066, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 49291b8f6811bde4aa78fa3b5cd4f4a6,
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 37fda375dd34a1a42b463cdad0fea6a3,
     type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -135,6 +135,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -210,6 +220,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_Vine_01c_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 7305667529336046521, guid: 80ad6611a1085fa49a2259795b724295,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7305667529336046521, guid: 80ad6611a1085fa49a2259795b724295,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7937912401534261507, guid: 80ad6611a1085fa49a2259795b724295,
         type: 3}
@@ -413,6 +433,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02b_PRE (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 793852090161630453, guid: ae369f3051526e241be0b923376bcb37,
         type: 3}
       propertyPath: m_RootOrder
@@ -490,17 +520,17 @@ PrefabInstance:
     - target: {fileID: 3518534198159994825, guid: b60168bac62ef414b99f3d7595fe096e,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.08919896
+      value: 0.08919893
       objectReference: {fileID: 0}
     - target: {fileID: 3518534198159994825, guid: b60168bac62ef414b99f3d7595fe096e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0029943027
+      value: 0.0029942596
       objectReference: {fileID: 0}
     - target: {fileID: 3518534198159994825, guid: b60168bac62ef414b99f3d7595fe096e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0002681588
+      value: -0.00026815484
       objectReference: {fileID: 0}
     - target: {fileID: 3518534198279486840, guid: b60168bac62ef414b99f3d7595fe096e,
         type: 3}
@@ -677,10 +707,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3058872657950850298, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree8a_PRE (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766769646106988550, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5787006191286316918, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793208010864589835, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7723870479414476736, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132606391284358008, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179137624712284948, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001534217439211539, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059dc4cc0a783384e8ea6d217a7e1ad3, type: 3}
@@ -799,6 +879,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!4 &80847891 stripped
@@ -910,6 +1000,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_02a_PRE (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c9f293663d96c4c8426dcb71a36bff, type: 3}
 --- !u!4 &82266413 stripped
@@ -965,6 +1065,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -1132,6 +1242,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!4 &95159444 stripped
@@ -1187,6 +1307,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -1303,7 +1433,7 @@ PrefabInstance:
     - target: {fileID: 5087968134542634330, guid: d5b7a15c81de6004fae97b2bd5e2b9b0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5087968134542634330, guid: d5b7a15c81de6004fae97b2bd5e2b9b0,
         type: 3}
@@ -1359,6 +1489,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_SwampWorld_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609172464347903968, guid: d5b7a15c81de6004fae97b2bd5e2b9b0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609172464347903968, guid: d5b7a15c81de6004fae97b2bd5e2b9b0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5b7a15c81de6004fae97b2bd5e2b9b0, type: 3}
@@ -1554,6 +1694,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_02a_PRE (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c9f293663d96c4c8426dcb71a36bff, type: 3}
 --- !u!4 &118034575 stripped
@@ -1629,6 +1779,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -1740,6 +1900,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -1865,6 +2035,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_02a_PRE (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c9f293663d96c4c8426dcb71a36bff, type: 3}
 --- !u!1001 &182150034
@@ -1878,6 +2058,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -2040,10 +2230,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3058872657950850298, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree8a_PRE (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766769646106988550, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5787006191286316918, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793208010864589835, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7723870479414476736, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132606391284358008, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179137624712284948, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001534217439211539, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059dc4cc0a783384e8ea6d217a7e1ad3, type: 3}
@@ -2100,6 +2340,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -2169,6 +2419,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -2280,6 +2540,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02b_PRE (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 793852090161630453, guid: ae369f3051526e241be0b923376bcb37,
         type: 3}
@@ -2405,6 +2675,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree5_Moss_01a_PRE (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c30a83c4dd13454ba36de6d8acea050, type: 3}
 --- !u!1 &249383004 stripped
@@ -2460,6 +2740,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -2529,6 +2819,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -2654,6 +2954,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!1001 &278467016
@@ -2723,6 +3033,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_02a_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c9f293663d96c4c8426dcb71a36bff, type: 3}
 --- !u!4 &278467017 stripped
@@ -2778,6 +3098,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02b_PRE (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 793852090161630453, guid: ae369f3051526e241be0b923376bcb37,
         type: 3}
@@ -2902,6 +3232,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
@@ -3051,10 +3391,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3058872657950850298, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree8a_PRE (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766769646106988550, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5787006191286316918, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793208010864589835, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7723870479414476736, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132606391284358008, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179137624712284948, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001534217439211539, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059dc4cc0a783384e8ea6d217a7e1ad3, type: 3}
@@ -3111,6 +3501,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -3285,10 +3685,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3058872657950850298, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree8a_PRE (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766769646106988550, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5787006191286316918, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793208010864589835, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7723870479414476736, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132606391284358008, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179137624712284948, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001534217439211539, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059dc4cc0a783384e8ea6d217a7e1ad3, type: 3}
@@ -3345,6 +3795,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -3415,6 +3875,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
       propertyPath: m_RootOrder
@@ -3483,6 +3953,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -3571,6 +4051,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_Wall_04alt_PRE (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1293293366977300049, guid: de44c618dfe06bd42b72abf1de03788f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293293366977300049, guid: de44c618dfe06bd42b72abf1de03788f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1925680110271028459, guid: de44c618dfe06bd42b72abf1de03788f,
         type: 3}
       propertyPath: m_RootOrder
@@ -3640,6 +4130,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
       propertyPath: m_RootOrder
@@ -3708,6 +4208,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_Wall_01a_PRE (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1738175966291642273, guid: cd8539de0ce57af4d9d9404ca80043b6,
         type: 3}
@@ -3846,6 +4356,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02b_PRE (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 793852090161630453, guid: ae369f3051526e241be0b923376bcb37,
         type: 3}
       propertyPath: m_RootOrder
@@ -3914,6 +4434,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -4003,12 +4533,12 @@ PrefabInstance:
     - target: {fileID: 1218514018363907360, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0030020725
+      value: 0.003002037
       objectReference: {fileID: 0}
     - target: {fileID: 1218514018363907360, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00015921409
+      value: -0.00015921223
       objectReference: {fileID: 0}
     - target: {fileID: 1218514018404579183, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
@@ -4033,12 +4563,12 @@ PrefabInstance:
     - target: {fileID: 1218514018869309626, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0029986897
+      value: 0.0029986543
       objectReference: {fileID: 0}
     - target: {fileID: 1218514018869309626, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00021364985
+      value: -0.00021364732
       objectReference: {fileID: 0}
     - target: {fileID: 1218514019018154507, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
@@ -4048,22 +4578,22 @@ PrefabInstance:
     - target: {fileID: 1218514019018154507, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99600935
+      value: 0.9960093
       objectReference: {fileID: 0}
     - target: {fileID: 1218514019018154507, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.089198925
+      value: 0.08919892
       objectReference: {fileID: 0}
     - target: {fileID: 1218514019018154507, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0029943096
+      value: 0.0029943092
       objectReference: {fileID: 0}
     - target: {fileID: 1218514019018154507, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00026815932
+      value: -0.0002681593
       objectReference: {fileID: 0}
     - target: {fileID: 6323920348297335463, guid: b7ce0249ecabf0a4891e019996554e02,
         type: 3}
@@ -4141,7 +4671,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 456929435}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4400,6 +4930,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_Stones_01c_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 6395958258086112980, guid: 05c44e750e9821445b265e60366c7798,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395958258086112980, guid: 05c44e750e9821445b265e60366c7798,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05c44e750e9821445b265e60366c7798, type: 3}
 --- !u!1001 &463467430
@@ -4413,6 +4953,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -4489,6 +5039,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
       propertyPath: m_RootOrder
@@ -4563,6 +5123,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -4639,6 +5209,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
       propertyPath: m_RootOrder
@@ -4707,6 +5287,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -4899,6 +5489,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_Wall_01a_PRE (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1738175966291642273, guid: cd8539de0ce57af4d9d9404ca80043b6,
         type: 3}
       propertyPath: m_RootOrder
@@ -4973,6 +5573,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02b_PRE (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 793852090161630453, guid: ae369f3051526e241be0b923376bcb37,
         type: 3}
@@ -5105,6 +5715,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
       propertyPath: m_RootOrder
@@ -5215,6 +5835,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -5340,6 +5970,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_Island_01b_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 9129349511836780760, guid: 7e58494920677af469cf21a950c55ade,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9129349511836780760, guid: 7e58494920677af469cf21a950c55ade,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e58494920677af469cf21a950c55ade, type: 3}
 --- !u!1 &569500447 stripped
@@ -5395,6 +6035,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -5520,6 +6170,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_Wall_02b_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 3410331200605360865, guid: eb91ba9a3a38d31488de8a75f189f5b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410331200605360865, guid: eb91ba9a3a38d31488de8a75f189f5b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb91ba9a3a38d31488de8a75f189f5b6, type: 3}
 --- !u!4 &578409441 stripped
@@ -5581,6 +6241,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -5741,6 +6411,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
       propertyPath: m_RootOrder
@@ -5851,6 +6531,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -5976,6 +6666,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!4 &671970231 stripped
@@ -6050,6 +6750,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
@@ -6126,6 +6836,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!4 &684253864 stripped
@@ -6187,6 +6907,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -6378,7 +7108,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &716228050
 PrefabInstance:
@@ -6405,7 +7135,7 @@ PrefabInstance:
     - target: {fileID: 3357560767626710423, guid: 4c7d06f68afa6ea4ab9db8f439ea0289,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3357560767626710423, guid: 4c7d06f68afa6ea4ab9db8f439ea0289,
         type: 3}
@@ -6613,6 +7343,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
       propertyPath: m_RootOrder
@@ -6723,6 +7463,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -6896,6 +7646,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree5_Moss_01a_PRE (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c30a83c4dd13454ba36de6d8acea050, type: 3}
 --- !u!1 &763480964 stripped
@@ -7006,6 +7766,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
@@ -7118,6 +7888,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!4 &792877386 stripped
@@ -7179,6 +7959,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_Wall_01a_PRE (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1738175966291642273, guid: cd8539de0ce57af4d9d9404ca80043b6,
         type: 3}
@@ -7254,6 +8044,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -7416,10 +8216,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3058872657950850298, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree8a_PRE (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766769646106988550, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5787006191286316918, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793208010864589835, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7723870479414476736, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132606391284358008, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179137624712284948, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001534217439211539, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059dc4cc0a783384e8ea6d217a7e1ad3, type: 3}
@@ -7527,10 +8377,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3058872657950850298, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree8a_PRE (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766769646106988550, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5787006191286316918, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793208010864589835, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7723870479414476736, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132606391284358008, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179137624712284948, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001534217439211539, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059dc4cc0a783384e8ea6d217a7e1ad3, type: 3}
@@ -7638,10 +8538,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3058872657950850298, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree8a_PRE (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766769646106988550, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5787006191286316918, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793208010864589835, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7723870479414476736, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132606391284358008, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179137624712284948, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001534217439211539, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059dc4cc0a783384e8ea6d217a7e1ad3, type: 3}
@@ -7740,6 +8690,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_Wall_01a_PRE (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1738175966291642273, guid: cd8539de0ce57af4d9d9404ca80043b6,
         type: 3}
@@ -7916,6 +8876,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
       propertyPath: m_RootOrder
@@ -8069,6 +9039,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_Island_01a_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 6169470095408877998, guid: a1e01b525d79dd048bf7a6cb0781fae3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6169470095408877998, guid: a1e01b525d79dd048bf7a6cb0781fae3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6833522979734653716, guid: a1e01b525d79dd048bf7a6cb0781fae3,
         type: 3}
       propertyPath: m_RootOrder
@@ -8193,6 +9173,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree5_Moss_01a_PRE (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c30a83c4dd13454ba36de6d8acea050, type: 3}
 --- !u!1001 &844181659
@@ -8262,6 +9252,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!4 &844181660 stripped
@@ -8323,6 +9323,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -8435,6 +9445,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
       propertyPath: m_RootOrder
@@ -8509,6 +9529,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -8621,6 +9651,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
       propertyPath: m_RootOrder
@@ -8689,6 +9729,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -8816,9 +9866,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 456929435}
     m_Modifications:
+    - target: {fileID: 1415507186035938, guid: 952f9c1c15edf1a45ab7acbf625d58e1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1817355384373440, guid: 952f9c1c15edf1a45ab7acbf625d58e1, type: 3}
       propertyPath: m_Name
       value: EA_Bush1c_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817355384373440, guid: 952f9c1c15edf1a45ab7acbf625d58e1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817355384373440, guid: 952f9c1c15edf1a45ab7acbf625d58e1, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4945080262149806, guid: 952f9c1c15edf1a45ab7acbf625d58e1, type: 3}
       propertyPath: m_RootOrder
@@ -8883,6 +9945,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree8_PRE (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 505533494716410338, guid: d84b9e2117309bd4f9acd235a7329464,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 505533494716410338, guid: d84b9e2117309bd4f9acd235a7329464,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 887161454268150616, guid: d84b9e2117309bd4f9acd235a7329464,
         type: 3}
@@ -9066,7 +10138,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &963194229
 AudioSource:
@@ -9210,6 +10282,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
       propertyPath: m_RootOrder
@@ -9278,6 +10360,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02b_PRE (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 793852090161630453, guid: ae369f3051526e241be0b923376bcb37,
         type: 3}
@@ -9389,6 +10481,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -9551,10 +10653,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3058872657950850298, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree8a_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766769646106988550, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5787006191286316918, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793208010864589835, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7723870479414476736, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132606391284358008, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179137624712284948, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001534217439211539, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059dc4cc0a783384e8ea6d217a7e1ad3, type: 3}
@@ -9654,6 +10806,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
       propertyPath: m_RootOrder
@@ -9722,6 +10884,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_Wall_01a_PRE (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1738175966291642273, guid: cd8539de0ce57af4d9d9404ca80043b6,
         type: 3}
@@ -9818,6 +10990,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_Wall_01a_PRE (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1738175966291642273, guid: cd8539de0ce57af4d9d9404ca80043b6,
         type: 3}
       propertyPath: m_RootOrder
@@ -9898,6 +11080,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -10009,6 +11201,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -10138,6 +11340,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -10305,6 +11517,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!4 &1086815304 stripped
@@ -10360,6 +11582,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -10514,6 +11746,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
       propertyPath: m_RootOrder
@@ -10644,6 +11886,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_02a_PRE (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c9f293663d96c4c8426dcb71a36bff, type: 3}
 --- !u!4 &1117350439 stripped
@@ -10699,6 +11951,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -10768,6 +12030,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -10899,6 +12171,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_Island_Small_05d_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 5758641202865640169, guid: 89982ffbffea5e84ea9155500309f378,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5758641202865640169, guid: 89982ffbffea5e84ea9155500309f378,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89982ffbffea5e84ea9155500309f378, type: 3}
 --- !u!1 &1164126548 stripped
@@ -11005,10 +12287,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3058872657950850298, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree8a_PRE (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766769646106988550, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5787006191286316918, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793208010864589835, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7723870479414476736, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132606391284358008, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179137624712284948, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001534217439211539, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059dc4cc0a783384e8ea6d217a7e1ad3, type: 3}
@@ -11065,6 +12397,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -11140,6 +12482,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -11265,6 +12617,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree5_Moss_01a_PRE (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c30a83c4dd13454ba36de6d8acea050, type: 3}
 --- !u!4 &1171920144 stripped
@@ -11375,6 +12737,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
@@ -11493,12 +12865,12 @@ PrefabInstance:
     - target: {fileID: 7450429986384594197, guid: 8893111bced45084cb7639efa3146672,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0029986526
+      value: 0.002998691
       objectReference: {fileID: 0}
     - target: {fileID: 7450429986384594197, guid: 8893111bced45084cb7639efa3146672,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0002136473
+      value: -0.00021365004
       objectReference: {fileID: 0}
     - target: {fileID: 7450429986894030991, guid: 8893111bced45084cb7639efa3146672,
         type: 3}
@@ -11549,6 +12921,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -11716,6 +13098,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_02a_PRE (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c9f293663d96c4c8426dcb71a36bff, type: 3}
 --- !u!4 &1195916408 stripped
@@ -11833,6 +13225,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!4 &1239770706 stripped
@@ -11888,6 +13290,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -11958,6 +13370,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02b_PRE (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 793852090161630453, guid: ae369f3051526e241be0b923376bcb37,
         type: 3}
       propertyPath: m_RootOrder
@@ -12026,6 +13448,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -12137,6 +13569,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -12352,6 +13794,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!1001 &1326845543
@@ -12365,6 +13817,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -12474,9 +13936,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1333784206}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stuff
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12508,6 +13970,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02b_PRE (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 793852090161630453, guid: ae369f3051526e241be0b923376bcb37,
         type: 3}
@@ -12583,6 +14055,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_Wall_03a_PRE (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834676395291139521, guid: b3eaee8e79c3eb44db1c84d2c55dd69b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834676395291139521, guid: b3eaee8e79c3eb44db1c84d2c55dd69b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4502563276648286075, guid: b3eaee8e79c3eb44db1c84d2c55dd69b,
         type: 3}
@@ -12662,6 +14144,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -12762,6 +14254,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -12929,6 +14431,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree5_Moss_01a_PRE (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c30a83c4dd13454ba36de6d8acea050, type: 3}
 --- !u!4 &1385531337 stripped
@@ -12984,6 +14496,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -13109,6 +14631,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_Island_Small_05c_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 5608610400370266291, guid: 8e2adcb081686e64086dfedf83eb83d1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5608610400370266291, guid: 8e2adcb081686e64086dfedf83eb83d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e2adcb081686e64086dfedf83eb83d1, type: 3}
 --- !u!1 &1388617579 stripped
@@ -13215,10 +14747,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3058872657950850298, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree8a_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766769646106988550, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5787006191286316918, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793208010864589835, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7723870479414476736, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132606391284358008, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179137624712284948, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001534217439211539, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059dc4cc0a783384e8ea6d217a7e1ad3, type: 3}
@@ -13318,6 +14900,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_Wall_01a_PRE (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1738175966291642273, guid: cd8539de0ce57af4d9d9404ca80043b6,
         type: 3}
       propertyPath: m_RootOrder
@@ -13393,6 +14985,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_Wall_04alt_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 1293293366977300049, guid: de44c618dfe06bd42b72abf1de03788f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293293366977300049, guid: de44c618dfe06bd42b72abf1de03788f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1925680110271028459, guid: de44c618dfe06bd42b72abf1de03788f,
         type: 3}
       propertyPath: m_RootOrder
@@ -13461,6 +15063,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -13592,6 +15204,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_02a_PRE (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c9f293663d96c4c8426dcb71a36bff, type: 3}
 --- !u!4 &1435978227 stripped
@@ -13695,6 +15317,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -13806,6 +15438,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -13973,6 +15615,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!4 &1462801015 stripped
@@ -14028,6 +15680,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree8_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 505533494716410338, guid: d84b9e2117309bd4f9acd235a7329464,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 505533494716410338, guid: d84b9e2117309bd4f9acd235a7329464,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 887161454268150616, guid: d84b9e2117309bd4f9acd235a7329464,
         type: 3}
@@ -14140,6 +15802,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02b_PRE (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 793852090161630453, guid: ae369f3051526e241be0b923376bcb37,
         type: 3}
       propertyPath: m_RootOrder
@@ -14214,6 +15886,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -14332,6 +16014,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyFragment
       objectReference: {fileID: 0}
+    - target: {fileID: 8079856609114347687, guid: 01c14553ff45b5b41b78ce8ea3f44992,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079856609114347687, guid: 01c14553ff45b5b41b78ce8ea3f44992,
+        type: 3}
+      propertyPath: m_TagString
+      value: POWER-UPs
+      objectReference: {fileID: 0}
     - target: {fileID: 8079856609114347688, guid: 01c14553ff45b5b41b78ce8ea3f44992,
         type: 3}
       propertyPath: m_RootOrder
@@ -14415,6 +16107,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -14588,6 +16290,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree5_Moss_01a_PRE (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c30a83c4dd13454ba36de6d8acea050, type: 3}
 --- !u!4 &1494584658 stripped
@@ -14699,6 +16411,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree5_Moss_01a_PRE (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c30a83c4dd13454ba36de6d8acea050, type: 3}
 --- !u!1001 &1521014408
@@ -14712,6 +16434,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -14823,6 +16555,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02b_PRE (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 793852090161630453, guid: ae369f3051526e241be0b923376bcb37,
         type: 3}
@@ -14948,6 +16690,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_02a_PRE (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c9f293663d96c4c8426dcb71a36bff, type: 3}
 --- !u!4 &1547023996 stripped
@@ -15020,7 +16772,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1555834691 stripped
 GameObject:
@@ -15126,10 +16878,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3058872657950850298, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree8a_PRE (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205986638733762499, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766769646106988550, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5787006191286316918, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5793208010864589835, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7723870479414476736, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132606391284358008, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179137624712284948, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001534217439211539, guid: 059dc4cc0a783384e8ea6d217a7e1ad3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059dc4cc0a783384e8ea6d217a7e1ad3, type: 3}
@@ -15186,6 +16988,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -15462,17 +17274,17 @@ PrefabInstance:
     - target: {fileID: 1517059704169065422, guid: 66f2153d60564fa48bcf916f5a0ef6eb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.08919895
+      value: 0.08919896
       objectReference: {fileID: 0}
     - target: {fileID: 1517059704169065422, guid: 66f2153d60564fa48bcf916f5a0ef6eb,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0029942899
+      value: 0.0029943027
       objectReference: {fileID: 0}
     - target: {fileID: 1517059704169065422, guid: 66f2153d60564fa48bcf916f5a0ef6eb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0002681576
+      value: -0.0002681588
       objectReference: {fileID: 0}
     - target: {fileID: 1517059704334760319, guid: 66f2153d60564fa48bcf916f5a0ef6eb,
         type: 3}
@@ -15492,12 +17304,12 @@ PrefabInstance:
     - target: {fileID: 1517059704334760319, guid: 66f2153d60564fa48bcf916f5a0ef6eb,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0029986526
+      value: 0.002998691
       objectReference: {fileID: 0}
     - target: {fileID: 1517059704334760319, guid: 66f2153d60564fa48bcf916f5a0ef6eb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0002136473
+      value: -0.00021365004
       objectReference: {fileID: 0}
     - target: {fileID: 5919895695527500642, guid: 66f2153d60564fa48bcf916f5a0ef6eb,
         type: 3}
@@ -15580,6 +17392,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
       propertyPath: m_RootOrder
@@ -15648,6 +17470,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -15759,6 +17591,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -15883,6 +17725,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
@@ -16037,6 +17889,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_02a_PRE (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c9f293663d96c4c8426dcb71a36bff, type: 3}
 --- !u!4 &1613300740 stripped
@@ -16134,6 +17996,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -16301,6 +18173,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_02a_PRE (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c9f293663d96c4c8426dcb71a36bff, type: 3}
 --- !u!1001 &1627138316
@@ -16314,6 +18196,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -16510,6 +18402,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02b_PRE (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 793852090161630453, guid: ae369f3051526e241be0b923376bcb37,
         type: 3}
       propertyPath: m_RootOrder
@@ -16584,6 +18486,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -16751,6 +18663,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!4 &1675765129 stripped
@@ -16862,6 +18784,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_Island_Small_05a_alt_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 6510445634160359520, guid: 44f25fb59695769418e04266536d5b15,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6510445634160359520, guid: 44f25fb59695769418e04266536d5b15,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44f25fb59695769418e04266536d5b15, type: 3}
 --- !u!1 &1678701824 stripped
@@ -16972,6 +18904,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
@@ -17104,6 +19046,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_02a_PRE (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c9f293663d96c4c8426dcb71a36bff, type: 3}
 --- !u!4 &1683694484 stripped
@@ -17165,6 +19117,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_Wall_01a_PRE (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1738175966291642273, guid: cd8539de0ce57af4d9d9404ca80043b6,
         type: 3}
@@ -17316,6 +19278,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_02a_PRE (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c9f293663d96c4c8426dcb71a36bff, type: 3}
 --- !u!4 &1704478838 stripped
@@ -17406,6 +19378,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
       propertyPath: m_RootOrder
@@ -17481,6 +19463,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
       propertyPath: m_RootOrder
@@ -17555,6 +19547,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02b_PRE (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 793852090161630453, guid: ae369f3051526e241be0b923376bcb37,
         type: 3}
@@ -17655,6 +19657,102 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1768979698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1768979702}
+  - component: {fileID: 1768979701}
+  - component: {fileID: 1768979700}
+  - component: {fileID: 1768979699}
+  m_Layer: 7
+  m_Name: Water
+  m_TagString: Water
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &1768979699
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768979698}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1768979700
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768979698}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 8538bd626cb3e80478f62e319f75e337, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1768979701
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768979698}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1768979702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768979698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8, y: 1.16, z: -18.9}
+  m_LocalScale: {x: 8.084847, y: 1, z: 11.464749}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1771070222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17666,6 +19764,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -17778,6 +19886,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
       propertyPath: m_RootOrder
@@ -17888,6 +20006,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02b_PRE (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 793852090161630453, guid: ae369f3051526e241be0b923376bcb37,
         type: 3}
@@ -18013,6 +20141,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!4 &1820110008 stripped
@@ -18111,6 +20249,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
       propertyPath: m_RootOrder
@@ -18185,6 +20333,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -18297,6 +20455,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
       propertyPath: m_RootOrder
@@ -18408,6 +20576,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
       propertyPath: m_RootOrder
@@ -18477,6 +20655,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
       propertyPath: m_RootOrder
@@ -18545,6 +20733,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_Wall_01a_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392999291284299035, guid: cd8539de0ce57af4d9d9404ca80043b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1738175966291642273, guid: cd8539de0ce57af4d9d9404ca80043b6,
         type: 3}
@@ -18626,6 +20824,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_Wall_04alt_PRE (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293293366977300049, guid: de44c618dfe06bd42b72abf1de03788f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293293366977300049, guid: de44c618dfe06bd42b72abf1de03788f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1925680110271028459, guid: de44c618dfe06bd42b72abf1de03788f,
         type: 3}
@@ -18835,6 +21043,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_02a_PRE (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c9f293663d96c4c8426dcb71a36bff, type: 3}
 --- !u!4 &1890434518 stripped
@@ -18854,6 +21072,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -18979,6 +21207,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!4 &1904734976 stripped
@@ -19089,6 +21327,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
@@ -19243,6 +21491,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree5_Moss_01a_PRE (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c30a83c4dd13454ba36de6d8acea050, type: 3}
 --- !u!4 &1910319944 stripped
@@ -19304,6 +21562,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02b_PRE (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 793852090161630453, guid: ae369f3051526e241be0b923376bcb37,
         type: 3}
@@ -19380,6 +21648,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02b_PRE (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 793852090161630453, guid: ae369f3051526e241be0b923376bcb37,
         type: 3}
       propertyPath: m_RootOrder
@@ -19448,6 +21726,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -19641,6 +21929,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree5_Moss_01a_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c30a83c4dd13454ba36de6d8acea050, type: 3}
 --- !u!1001 &1938561308
@@ -19654,6 +21952,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -19736,6 +22044,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
       propertyPath: m_RootOrder
@@ -19804,6 +22122,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_Vine_01a_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 329820647317112062, guid: b1b46156857fc0043b926f02de61fb3c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 329820647317112062, guid: b1b46156857fc0043b926f02de61fb3c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1141682902344228420, guid: b1b46156857fc0043b926f02de61fb3c,
         type: 3}
@@ -19915,6 +22243,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_Wall_04alt_PRE (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293293366977300049, guid: de44c618dfe06bd42b72abf1de03788f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293293366977300049, guid: de44c618dfe06bd42b72abf1de03788f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1925680110271028459, guid: de44c618dfe06bd42b72abf1de03788f,
         type: 3}
@@ -20039,6 +22377,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
@@ -20203,6 +22551,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_Island_Small_05f_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 6648829349007283447, guid: 5d467ae9629dd2348b3a6bdef0cb9642,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6648829349007283447, guid: 5d467ae9629dd2348b3a6bdef0cb9642,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d467ae9629dd2348b3a6bdef0cb9642, type: 3}
 --- !u!1 &1970540042 stripped
@@ -20258,6 +22616,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -20383,6 +22751,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!4 &2032913113 stripped
@@ -20438,6 +22816,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree7_PRE (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969661240566505016, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5745493879106176130, guid: 8c2dbccfc396a9f46ac77be9e7f5d2ce,
         type: 3}
@@ -20605,6 +22993,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!4 &2038481952 stripped
@@ -20678,9 +23076,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2040428944}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Walls
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20789,6 +23187,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree5_Moss_01a_PRE (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c30a83c4dd13454ba36de6d8acea050, type: 3}
 --- !u!4 &2053300026 stripped
@@ -20847,6 +23255,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 565a7c796f3a0c54e992080c5f3daa20, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 565a7c796f3a0c54e992080c5f3daa20, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 565a7c796f3a0c54e992080c5f3daa20, type: 3}
       propertyPath: m_RootOrder
@@ -20932,6 +23344,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02b_PRE (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22382661653321295, guid: ae369f3051526e241be0b923376bcb37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 793852090161630453, guid: ae369f3051526e241be0b923376bcb37,
         type: 3}
       propertyPath: m_RootOrder
@@ -21000,6 +23422,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
@@ -21075,6 +23507,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_tree4_PRE (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135380309732375705, guid: 3a962179c06dc744490fcc5e65aed055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8911917662167000611, guid: 3a962179c06dc744490fcc5e65aed055,
         type: 3}
@@ -21187,6 +23629,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_LeafFruits_02a_PRE (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819952122076601541, guid: 87f0dd4d9fea4a9478f896afc8674435,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
         type: 3}
       propertyPath: m_RootOrder
@@ -21250,6 +23702,115 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2093654423}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2097259924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097259925}
+  - component: {fileID: 2097259928}
+  - component: {fileID: 2097259927}
+  - component: {fileID: 2097259926}
+  - component: {fileID: 2097259929}
+  m_Layer: 7
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2097259925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097259924}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.54, z: 0}
+  m_LocalScale: {x: 7.1307, y: 4.3668, z: 0.44835}
+  m_Children: []
+  m_Father: {fileID: 2060038629}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2097259926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097259924}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &2097259927
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097259924}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5a6af6704db836149940a0f6eb215e0b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2097259928
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097259924}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2097259929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097259924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59005613db2d25a4f99ff35b998b1e55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whichScene: Level 4_Arluvior Tower
 --- !u!4 &2105312477 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5307554035974555263, guid: 87f0dd4d9fea4a9478f896afc8674435,
@@ -21322,6 +23883,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_02a_PRE (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c9f293663d96c4c8426dcb71a36bff, type: 3}
@@ -21434,6 +24005,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_tree5_Moss_01a_PRE (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146473670812837647, guid: 5c30a83c4dd13454ba36de6d8acea050,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c30a83c4dd13454ba36de6d8acea050, type: 3}
 --- !u!1001 &2136451892
@@ -21503,6 +24084,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_01a_PRE (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716474756145444020, guid: 85c9c654e42b2f14eb33ac76f9b45089,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c9c654e42b2f14eb33ac76f9b45089, type: 3}
 --- !u!1001 &2137924470
@@ -21516,6 +24107,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_Wall_03a_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834676395291139521, guid: b3eaee8e79c3eb44db1c84d2c55dd69b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834676395291139521, guid: b3eaee8e79c3eb44db1c84d2c55dd69b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4502563276648286075, guid: b3eaee8e79c3eb44db1c84d2c55dd69b,
         type: 3}
@@ -21650,6 +24251,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA_Swamp_BrokenTree_02a_PRE (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887213342366645966, guid: 71c9f293663d96c4c8426dcb71a36bff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c9f293663d96c4c8426dcb71a36bff, type: 3}

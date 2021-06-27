@@ -13,7 +13,7 @@ public class General_TriggerSwapSzene : MonoBehaviour
     {
         if (isin == true) 
         {
-            if (whichScene != "" && (Input.GetKeyDown(KeyCode.F) || Input.GetButtonDown("nextLevel")))
+            if (whichScene != "" && (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("nextLevel")) && PlayerPrefs.GetInt("TutorialDisable") == 1)
             {
 
                 Debug.Log("DMTButtonScene: SceneManagement go to > " + whichScene);
@@ -24,8 +24,11 @@ public class General_TriggerSwapSzene : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        UI_text.SetActive(true);
-        isin = true;
+        if (PlayerPrefs.GetInt("TutorialDisable") == 1)
+        {
+            UI_text.SetActive(true);
+            isin = true;
+        }
     }
 
     public void OnTriggerExit(Collider other)

@@ -24,6 +24,11 @@ public class Menu_Controller_Navigation : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         // set a new selected Object
         EventSystem.current.SetSelectedGameObject(mainMenuFirstButton);
+
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            PlayerPrefs.SetInt("boost", 0);
+        }
     }
 
     private void OnEnable()

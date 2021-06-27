@@ -46,6 +46,8 @@ public class Controller : MonoBehaviour
     [SerializeField]
     private float maxSpeed = 15f;
     private float currentSpeed = 15f;
+    private float saveMaxSpeed;
+    private float saveAcceleration;
 
     private void Awake()
     {
@@ -81,11 +83,14 @@ public class Controller : MonoBehaviour
         {
             PlayerPrefs.SetInt("boost", 0);
         }
-        else if (PlayerPrefs.GetInt("boost") == 1)
+        else if (PlayerPrefs.GetInt("boost") > 0)
         {
-            jumpamount += 1;
+            jumpamount += PlayerPrefs.GetInt("boost");
             boost.SetActive(true);
         }
+
+        saveMaxSpeed = maxSpeed;
+        saveAcceleration = acceleration;
     }
 
     private void Jump_performed(InputAction.CallbackContext obj)
@@ -145,10 +150,26 @@ public class Controller : MonoBehaviour
     {
         if (other.gameObject.CompareTag("POWER-UPs"))
         {
-            PlayerPrefs.SetInt("boost", 1);
+            PlayerPrefs.SetInt("boost", PlayerPrefs.GetInt("boost") + 1);
             jumpamount += 1;
             boost.SetActive(true);
             other.gameObject.SetActive(false);
+        }
+
+        else if (other.gameObject.CompareTag("Water"))
+        {
+            maxSpeed = saveMaxSpeed / 1.5f;
+            acceleration = saveAcceleration / 1.5f;
+        }
+
+    }
+
+    private void OnTriggerExit(Collider other)
+    {        
+        if (other.gameObject.CompareTag("Water"))
+        {
+            maxSpeed = saveMaxSpeed;
+            acceleration = saveAcceleration;
         }
     }
 
@@ -172,12 +193,12 @@ public class Controller : MonoBehaviour
             // Debug.Log(currentSpeed);
 
             // here we are applying the forces to the rigidbody
-            if (currentSpeed > maxSpeed - (maxSpeed / 4))
+            //if (currentSpeed > maxSpeed - (maxSpeed / 4))
             {
                 // we are going fast enough to limit the speed
                 move = move * (maxSpeed - currentSpeed) / maxSpeed;
             }
-            else //  we are not moving too fast, add full force
+            //else //  we are not moving too fast, add full force
             {
                 // move = move;
             }

@@ -37,7 +37,7 @@ namespace DMT
         public int useFrameRate = 0; // if FrameRate = 0 do not change the system values
 
         private GameObject myDebugConsole;
-        // private bool screenFull = true;
+        private bool screenFull = true;
 
         void Start()
         {
@@ -103,14 +103,14 @@ namespace DMT
                 Cursor.visible = myDebugConsole.activeSelf; // also turn cursor on or off
             }
 
-            /*if (Input.GetKeyDown("f")) // f full toggle
+            if (Input.GetKeyDown("f")) // f full toggle
             {
                 if (screenFull)
                     Screen.fullScreenMode = FullScreenMode.Windowed;
                 else
                     Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
                 screenFull = !screenFull;
-            }*/
+            }
 
             if (Input.GetKeyDown("c")) Cursor.visible = !Cursor.visible; // add startLog
             if (Input.GetKeyDown("i")) ShowInfos(); // showInfos
