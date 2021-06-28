@@ -342,97 +342,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Music files from freesound.org:
-
-
-
-    Button-Click: <link="https://freesound.org/people/Soughtaftersounds/sounds/145459/">Menu
-    Click-Sparkle</link>
-
-    Arluviors Tower: <link="https://freesound.org/people/tyops/sounds/329860/#">Defense
-    of Lanosia</link>
-
-    Flower Meadow: <link="https://freesound.org/people/Migfus20/sounds/560457/">Emotional
-    Background Music Orchestra (Adventure Type)</link>
-
-    Main Menu Background:
-    <link="https://freesound.org/people/Mrthenoronha/sounds/521656/">Soft Game Them
-    Loop.wav</link>
-
-    Bleak Forest: <link="https://freesound.org/people/LilyMarie/sounds/108241/">Lilymarie
-    Swamp</link>
-
-    Flower Meadow: <link="https://freesound.org/people/Audionautics/sounds/133901/">Lava
-    Loop</link>
-
-    Sound Effect Jump Fat Character:
-
-    <link="https://freesound.org/people/Artmasterrich/sounds/345437/">Jump</link>
-
-    Sound
-    Effect Game Over:
-
-    <link="https://freesound.org/people/noirenex/sounds/159408/">Game
-    Over</link>
-
-    Sound Effect Fall Lava:
-
-    <link="https://freesound.org/people/Iceofdoom/sounds/385819/">Lava
-    Fall</link>
-
-    Sound Effect Jump Normal:
-
-    <link="https://freesound.org/people/acebrian/sounds/380471/">Jump
-    Normal</link>
-
-    Sound Effect Squeaking Door:
-
-    <link="https://freesound.org/people/blimp66/sounds/464019/">Door
-    Squeaking</link>
-
-
-
-
-
-    Assets:
-
-
-
-    3D Models:
-
-    Chain for Chandelier:
-    <link="https://www.cgtrader.com/items/1894251/download-page">chain 3d</link>
-
-    Model
-    for Chandelier: <link="https://www.turbosquid.com/3d-models/medieval-candle-chandelier-3d-model-1389671">Medieval
-    Candle Chandelier 3D Model</link>
-
-    Model for Swamp:  <link="https://www.emaceart.com/#latest_package/">Mid
-    Poly Stylized Swamp Remastered</link>
-
-    Models for Environment Lvl 2: <link="https://assetstore.unity.com/packages/3d/environments/fantasy/mega-fantasy-props-pack-87811/">
-
-    Mega
-    Fantasy Props Pack</link>
-
-    Model for PowerUps: <link="https://www.turbosquid.com/3d-models/games-cube-3d-1171982">Game
-    Cubes 3D</link>
-
-
-
-    Codeexamples:
-
-
-
-    Jonathon Hopkins: <link="https://gitlab.com/jonnohopkins/tmp-hyperlinks/-/blob/master/Assets/OpenHyperlinks.cs">Open
-    Hyperlinks</link>
-
-    TechCor (unity forum): <link="https://forum.unity.com/threads/non-interactable-ui-element-e-g-button-not-skipped-by-navigation.285500/#post-2522528">Skip
-    Non-Interactable Buttons</link>
-
-    Todd Brentlinger: <link="https://github.com/toddbrentlinger/Unity-First-Person-Shooter">TMP_TextInfoDebugTool</link>
-
-'
+  m_text: https://fhjoanneum-my.sharepoint.com/:w:/g/personal/david_hasenhuettl_edu_fh-joanneum_at/EfxCsWGNnLVOnGatwaA5nKkBxrs_VcCHbYRHVsrJSr3vcA?e=LPeWoM
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -542,10 +452,10 @@ MonoBehaviour:
   ShowLines: 0
   ShowMeshBounds: 0
   ShowTextBounds: 0
-  ObjectStats: 'Characters: 862   Words: 121   Spaces: 132   Sprites: 0   Links:
-    19
+  ObjectStats: 'Characters: 144   Words: 16   Spaces: 0   Sprites: 0   Links: 0
 
-    Lines: 42   Pages: 1'
+    Lines:
+    4   Pages: 1'
 --- !u!114 &336657042
 MonoBehaviour:
   m_ObjectHideFlags: 0

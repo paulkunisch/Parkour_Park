@@ -11,7 +11,7 @@ public class onCollideBackToSpawn : MonoBehaviour
     public GameObject respawnPoint1;
     [SerializeField]
     public GameObject respawnPoint2;
-    
+
     [SerializeField]
     private AudioClip deathsound; // Add your Audio Clip on this gameobject as well
 
@@ -46,22 +46,26 @@ public class onCollideBackToSpawn : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        GameObject character = FindClosestCharacter();
-
-        respawnPoint = PlayerPrefs.GetInt("respawnPoint");
-
-        switch (respawnPoint)
+        if (other.gameObject.CompareTag("Player"))
         {
-            case 1:
-                character.transform.position = respawnPoint1.transform.position;
-                break;
-            case 2:
-                character.transform.position = respawnPoint2.transform.position;
-                break;
+            GameObject character = FindClosestCharacter();
+
+            respawnPoint = PlayerPrefs.GetInt("respawnPoint");
+
+            switch (respawnPoint)
+            {
+                case 1:
+                    character.transform.position = respawnPoint1.transform.position;
+                    break;
+                case 2:
+                    character.transform.position = respawnPoint2.transform.position;
+                    break;
+            }
+
+            // Sound
+            GetComponent<AudioSource>().Play();
         }
 
-        // Sound
-        GetComponent<AudioSource>().Play();
 
     }
 }
