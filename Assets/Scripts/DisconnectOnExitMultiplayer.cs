@@ -12,13 +12,14 @@ public class DisconnectOnExitMultiplayer : NetworkBehaviour
 
     public void DisconnectSession(string sceneToGo)
     {
-        if (IsHost)
+        /*if (IsHost)
         {
             Time.timeScale = 1f;
-            NetworkManager.Singleton.StopHost();       
+            NetworkManager.Singleton.StopClient();
+            NetworkManager.Singleton.StopHost();
             SceneManager.LoadScene(sceneToGo);
             Debug.Log("Sessions Stoped");
-        }
+        }*/
        
         if (IsClient)
         {
@@ -26,6 +27,11 @@ public class DisconnectOnExitMultiplayer : NetworkBehaviour
             NetworkManager.Singleton.StopClient();           
             SceneManager.LoadScene(sceneToGo);
             Debug.Log("Client Session Stoped");
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(sceneToGo);
         }
     }
 
