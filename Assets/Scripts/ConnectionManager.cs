@@ -7,7 +7,7 @@ using System;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 using MLAPI.Transports.UNET;
-// Author: Paul Kunisch
+// Author: Paul Kunisch/04.06.2021
 // foundation for multiplayer
 // builds connection between host and clients
 // sets password and spawnpoints 

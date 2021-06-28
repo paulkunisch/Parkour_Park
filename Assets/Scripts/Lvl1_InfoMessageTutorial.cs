@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-// Author: David Hasenhüttl
+// Author: David Hasenhüttl/10.06.2021
 public class Lvl1_InfoMessageTutorial : MonoBehaviour // this script is used to enable a canvas upon reaching a trigger collider
 {
     public GameObject pauseMenu; // select a canvas holding your pause menu

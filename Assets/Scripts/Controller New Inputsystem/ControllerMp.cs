@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using MLAPI;
 
-// Author: David Hasenhüttl, Paul Kunisch
+// Author: David Hasenhüttl, Paul Kunisch/ 05.06.2021/
+//Changed Version of our Player Controller to handl network objects 
 public class ControllerMp : NetworkBehaviour
 {
     //Inputsystem Controller
@@ -107,7 +108,7 @@ public class ControllerMp : NetworkBehaviour
             ThirdPersonCamera.name = "Third Person Camera-c";
             Debug.Log("Rename tpc" + ThirdPersonCamera.name);
         } 
-
+        //prefents main camera to switch to resently added object
         if (!IsLocalPlayer)
         {
             ThirdPersonCamera.gameObject.SetActive(false);
@@ -182,7 +183,7 @@ public class ControllerMp : NetworkBehaviour
         {
             jumpcount = jumpamount;
         }
-
+        //only respawn the player in multiplayer wich entered deathzones
         if (IsLocalPlayer)
         {
             deathzone = PlayerPrefs.GetInt("deathzone");

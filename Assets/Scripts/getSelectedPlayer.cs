@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//Author: Paul Kunisch 
+//Author: Paul Kunisch /18.06.2021
 public class getSelectedPlayer : MonoBehaviour
 {
     //Variable stores the number of the selected character 
