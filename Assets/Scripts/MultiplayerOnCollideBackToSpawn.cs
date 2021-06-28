@@ -3,8 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using MLAPI;
 
+/* Author: Paul Kunisch, David Hasenhüttl
+ * this script teleports a player to the corresponding coordinates onTriggerEnter
+ * (drag on Gameobject with collider)
+ * an easier way would be to use the "other" collider to select the character colliding,
+ * however this is not working for us since we have our controller script located on the
+ * Parent Gameobject, while we use multiple colliders that are located on a child GO named Mesh.
+ */
 public class MultiplayerOnCollideBackToSpawn : NetworkBehaviour
 {
+    [SerializeField]
     private Vector3 RespawnPoint = new Vector3(330f, 21f, 330f);
 
     public GameObject FindClosestCharacter()
