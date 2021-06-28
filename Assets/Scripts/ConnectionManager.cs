@@ -19,19 +19,19 @@ public class ConnectionManager : MonoBehaviour
     private Vector3 sPointHost = new Vector3 (-95.67f,200f,-2306.7f);
     //Stores staring point of the client
     private Vector3 sPointClient = new Vector3(-95f,200f,-2303.25f);
-    public string ipAddress = "127.0.0.1";
+    public string ipAddress; //= "127.0.0.1"; //just for testing 
     UNetTransport transport;
    
     public void HostGame()
     {
         NetworkManager.Singleton.ConnectionApprovalCallback += ApprovalCheck;
-        NetworkManager.Singleton.StartHost(sPointHost, Quaternion.identity);
-        menuCanvers.SetActive(false);
+        NetworkManager.Singleton.StartHost(sPointHost, Quaternion.identity); //activats Host Connection with given vector
+        menuCanvers.SetActive(false); //deactivates UI for host
        
     }
 
     private void ApprovalCheck(byte[] connectionData, ulong clientID, NetworkManager.ConnectionApprovedDelegate callback)
-    {
+    { //checks the password of an incoming client and build the conection 
         bool approve = System.Text.Encoding.ASCII.GetString(connectionData) == "Pa55w.rd";
         Debug.Log("Approving a conection");
         callback(true, null, approve, sPointClient, Quaternion.identity);      
@@ -40,8 +40,8 @@ public class ConnectionManager : MonoBehaviour
     public void JoinGame()
     {
         transport = NetworkManager.Singleton.GetComponent<UNetTransport>();
-        transport.ConnectAddress = ipAddress;
-        menuCanvers.SetActive(false);
+        transport.ConnectAddress = ipAddress; 
+        menuCanvers.SetActive(false); //deactivates UI for client
         NetworkManager.Singleton.StartClient();
         NetworkManager.Singleton.NetworkConfig.ConnectionData = System.Text.Encoding.ASCII.GetBytes("Pa55w.rd");
     }

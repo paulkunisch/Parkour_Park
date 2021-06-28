@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using MLAPI;
-//Author:Paul Kunisch 
-//Script to close netwokeconections if multiplayer is closed 
+//Author:Paul Kunisch
+//Script to close netwokeconections if multiplayer is closed by Client
+//to enable reconection to the same session
 
 public class DisconnectOnExitMultiplayer : NetworkBehaviour
 {
@@ -12,38 +13,20 @@ public class DisconnectOnExitMultiplayer : NetworkBehaviour
 
     public void DisconnectSession(string sceneToGo)
     {
-        /*if (IsHost)
-        {
-            Time.timeScale = 1f;
-            NetworkManager.Singleton.StopClient();
-            NetworkManager.Singleton.StopHost();
-            SceneManager.LoadScene(sceneToGo);
-            Debug.Log("Sessions Stoped");
-        }*/
        
         if (IsClient)
         {
-            Time.timeScale = 1f;
-            NetworkManager.Singleton.StopClient();           
-            SceneManager.LoadScene(sceneToGo);
+            Time.timeScale = 1f;//if Pause time frise from pausmenue back to normal
+            NetworkManager.Singleton.StopClient(); //stops client connection         
+            SceneManager.LoadScene(sceneToGo); //loads given scene
             Debug.Log("Client Session Stoped");
         }
         else
         {
-            Time.timeScale = 1f;
-            SceneManager.LoadScene(sceneToGo);
+            Time.timeScale = 1f;// rectivats time client if Host leafs
+            SceneManager.LoadScene(sceneToGo); //enables the client to go back to main menu
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }
