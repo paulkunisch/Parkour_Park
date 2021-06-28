@@ -20,6 +20,9 @@ using UnityEngine;
  * generale Features with IngameDebugConsole (always needed) [call with: !]
  */
 
+// Editor: David Hasenhüttl
+// since we implemented our own pause menu on "esc", we removed the functionality here
+// changes are commented
 namespace DMT
 {
     /// <summary>
@@ -39,6 +42,8 @@ namespace DMT
         private GameObject myDebugConsole;
         private bool screenFull = true;
 
+        private static bool alreadyExists; // David: static Variable to not replicate this element on reload of scene. default Value Boolean == false
+
         void Start()
         {
             Debug.Log("##### Init ApplicationManager.cs >> c..Cursor, !..inGameDebugger f..full/window");
@@ -50,7 +55,17 @@ namespace DMT
                 Debug.LogWarning("##### System Language (NOT GERMAN): " + Application.systemLanguage + " -- Platform: " + Application.platform +
                     " -- Sys: " + SystemInfo.operatingSystem);
 
-            DontDestroyOnLoad(this.gameObject);
+
+            if (alreadyExists == false) // David: on first start of the application
+            {
+                DontDestroyOnLoad(this.gameObject); // David: only keep element if it's the first one in the scene
+                alreadyExists = true; // David: set static counter 
+            }
+            else
+            {
+                Destroy(this); // David: Delete this script from duplicate GOs after reloading the initial scene
+            }
+
             if (hideCursor) Cursor.visible = false;
             myDebugConsole = GameObject.Find("IngameDebugConsole");
             if (hideConsole) myDebugConsole.SetActive(false);
@@ -95,6 +110,7 @@ namespace DMT
             //
 
             // if (Input.GetKey("escape")) Application.Quit(); 
+            // David: our application implemented our own pause menu for esc, so we had to comment this function out
 
             // https://docs.unity3d.com/ScriptReference/PlayerPrefs.DeleteAll.html
             if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown("1"))
