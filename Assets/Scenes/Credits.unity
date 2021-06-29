@@ -319,8 +319,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 14.9629, y: 1.1915984}
-  m_SizeDelta: {x: 1000, y: 3669.8}
+  m_AnchoredPosition: {x: 14.9644, y: 19.237555}
+  m_SizeDelta: {x: 1000, y: 2635.2}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &336657038
 MonoBehaviour:
@@ -342,7 +342,46 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: https://fhjoanneum-my.sharepoint.com/:w:/g/personal/david_hasenhuettl_edu_fh-joanneum_at/EfxCsWGNnLVOnGatwaA5nKkBxrs_VcCHbYRHVsrJSr3vcA?e=LPeWoM
+  m_text: "Music files from freesound.org:\r\nButton-Click: <link=\"https://freesound.org/people/Soughtaftersounds/sounds/145459\">Menu
+    Click-Sparkle</link>\r\nArluviors Tower: <link=\"https://freesound.org/people/tyops/sounds/329860/#\">Defense
+    of Lanosia</link>\r\nFlower Meadow: <link=\"https://freesound.org/people/Migfus20/sounds/560457/\">Emotional
+    Background Music Orchestra (Adventure Type)</link>\r\nMain Menu Background: <link=\"https://freesound.org/people/Mrthenoronha/sounds/521656/\">Soft
+    Game Them Loop.wav</link>\r\nBleak Forest: <link=\"https://freesound.org/people/LilyMarie/sounds/108241/\">Lilymarie
+    Swamp</link>\r\nLava Lake: <link=\"https://freesound.org/people/Audionautics/sounds/133901/\">Lava
+    Sound Loop</link>\r\nSound Effect Jump Fat Character: <link=\"https://freesound.org/people/Artmasterrich/sounds/345437/\">Jump</link>\r\nSound
+    Effect Game Over: <link=\"https://freesound.org/people/noirenex/sounds/159408/\">Game
+    Over</link>\r\nSound Effect Fall Lava: <link=\"https://freesound.org/people/Iceofdoom/sounds/385819/\">Lava
+    Fall</link>\r\nSound Effect Jump Normal: <link=\"https://freesound.org/people/acebrian/sounds/380471/\">Jump
+    Normal</link>\r\nSound Effect Squeaking Door: <link=\"https://freesound.org/people/blimp66/sounds/464019/\">Door
+    Squeaking</link>\r\nSound Effect Wind: <link=\"https://freesoundslibrary.com/wind-sound-effect-free/\">Wind</link>\r\n\r\n\r\nAssets:\r\nMega
+    Fantasy Props Pack: <link=\"https://assetstore.unity.com/packages/3d/environments/fantasy/mega-fantasy-props-pack-87811\">including
+    Models, Materials and more!</link>\r\nPolygonal Foliage Asset Package: <link=\"https://assetstore.unity.com/packages/3d/environments/polygonal-foliage-asset-package-133037\">Stones,
+    Tress and more</link>\r\nLow Poly Simple Nature Pack: <link=\"https://assetstore.unity.com/packages/3d/environments/landscapes/low-poly-simple-nature-pack-162153\">lowpoly
+    landscape, trees, ...</link>\r\nBarrels Free: <link=\"https://assetstore.unity.com/packages/3d/environments/historic/barrels-free-142580\">Tutorial
+    Level barrels</link>\r\nCustomizable skybox: <link=\"https://assetstore.unity.com/packages/2d/textures-materials/sky/customizable-skybox-174576\">custom
+    skybox</link>\r\nFlames of the Phoenix: <link=\"https://assetstore.unity.com/packages/vfx/particles/fire-explosions/flames-of-the-phoenix-46176\">Fire-animation
+    for torches</link>\r\nFree Rug Pack: <link=\"https://assetstore.unity.com/packages/3d/props/interior/free-rug-pack-118178\">Rug
+    for Lvl 1 (Tutorial) in hall</link>\r\nLow PolyWeapons RPG Items: <link=\"https://assetstore.unity.com/packages/3d/props/weapons/low-poly-weapons-rpg-items-95184\">Weapons
+    on the Wall in Lvl 1</link>\r\n\r\n\r\n3D Models:\r\nChain for Chandelier: <link=\"https://cgtrader.com/items/1894251/download-page\">chain
+    3d</link>\r\nModel for Chandelier: <link=\"https://turbosquid.com/3d-models/medieval-candle-chandelier-3d-model-1389671\">Medieval
+    Candle Chandelier 3D Model</link>\r\nModel for Swamp:  <link=\"https://emaceart.com/#latest_package/\">Mid
+    Poly Stylized Swamp Remastered</link>\r\nModel for PowerUps: <link=\"https://turbosquid.com/3d-models/games-cube-3d-1171982\">Game
+    Cubes 3D</link>\r\n\r\n\r\nPackages:\r\nGitHub for Unity: <link=\"https://assetstore.unity.com/packages/tools/version-control/github-for-unity-118069\">Bring
+    Git and GitHub into Unity</link>\r\nMLAPI: <link=\"https://docs-multiplayer.unity3d.com/docs/migration/install/index.html\">Unity
+    Multiplayer Networking</link>\r\nParrelSync: <link=\"https://github.com/VeriorPies/ParrelSync\">Tool
+    for developing Multiplayer</link>\r\nCinemachine and Inputsystem: <link=\"https://docs.unity3d.com/Packages/com.unity.package-manager-ui@1.8/manual/index.html\">Unity
+    Package Manager</link>\r\n\r\nPictures:\r\nBurg Icon: <link=\"https://icon-icons.com/de/symbol/Burg/155982\">Burg
+    Symbol</link>\r\nSword Icon: <link=\"https://deviantart.com/blueamnesiac/art/ALBW-Forgotten-Sword-Cursor-416444557\">ALBW
+    Forgotten Sword Cursor by BLUEamnesiac</link>\r\n\r\n\r\nCodeexamples:\r\nJonathon
+    Hopkins: <link=\"https://gitlab.com/jonnohopkins/tmp-hyperlinks/-/blob/master/Assets/OpenHyperlinks.cs\">Open
+    Hyperlinks</link>\r\nTechCor (unity forum): <link=\"https://forum.unity.com/threads/non-interactable-ui-element-e-g-button-not-skipped-by-navigation.285500/#post-2522528\">Skip
+    Non-Interactable Buttons</link>\r\nTodd Brentlinger: <link=\"https://github.com/toddbrentlinger/Unity-First-Person-Shooter\">TMP_TextInfoDebugTool</link>\r\nDr.
+    Alexander Nischelwitzer: <link=\"https://fh-joanneum.at/hochschule/person/alexander-nischelwitzer/\">General_Changescene</link>\r\n\r\n\r\nMaterials:\r\nWater
+    Lvl2: <link=\"https://lowlypoly.com/collections/free-3d-models-textures/products/stylized-water-texture\">Water</link>\r\nStoneWall
+    Lvl4/Lvl5: <link=\"https://lowlypoly.com/collections/free-3d-models-textures/products/hand-painted-stone-texture\">Stonewall</link>\r\nGras
+    on terrain Lvl4/Lvl5: <link=\"https://lowlypoly.com/collections/free-3d-models-textures/products/stylized-grass-texture\">stylized
+    Gras</link>\r\nLava Lvl2: <link=\"https://assetstore.unity.com/packages/2d/textures-materials/nature/stylized-lava-texture-153161\">Stylized
+    Lava Texture</link>\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -452,10 +491,10 @@ MonoBehaviour:
   ShowLines: 0
   ShowMeshBounds: 0
   ShowTextBounds: 0
-  ObjectStats: 'Characters: 144   Words: 16   Spaces: 0   Sprites: 0   Links: 0
+  ObjectStats: 'Characters: 1754   Words: 242   Spaces: 248   Sprites: 0   Links:
+    38
 
-    Lines:
-    4   Pages: 1'
+    Lines: 59   Pages: 1'
 --- !u!114 &336657042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,8 +589,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1359067668}
   m_HandleRect: {fileID: 1359067667}
   m_Direction: 2
-  m_Value: 1.0000001
-  m_Size: 0.16202082
+  m_Value: 0.9908264
+  m_Size: 0.22563143
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2629,8 +2668,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0191, y: -1.1919}
-  m_SizeDelta: {x: 0, y: 3675.9}
+  m_AnchoredPosition: {x: 0.0206, y: -0.5179}
+  m_SizeDelta: {x: 0, y: 2634.4048}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &2118748220
 GameObject:
