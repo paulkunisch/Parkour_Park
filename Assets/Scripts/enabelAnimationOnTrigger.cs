@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Author: David Hasenhüttl
+// Author: David Hasenhüttl/20.06.2021
 public class enabelAnimationOnTrigger : MonoBehaviour // this script is used for the coop element in our multiplayer:
                                                       // enter the collider of the underlying GO and start an animation
 {
