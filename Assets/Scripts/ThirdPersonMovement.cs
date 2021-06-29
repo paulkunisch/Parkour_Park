@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Author: David Hasenhüttl
+// Author: David Hasenhüttl/25.04.2021
 /*
  *              IMPORTANT: DEPRECATED VERSION!
  *              this is the old Version of our Player-controller.

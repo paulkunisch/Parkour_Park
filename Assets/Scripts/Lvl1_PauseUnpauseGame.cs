@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-// Author: David Hasenhüttl
+// Author: David Hasenhüttl/20.05.2021
 public class Lvl1_PauseUnpauseGame : MonoBehaviour
 {
     public GameObject pauseMenu; // select a canvas holding your pause menu

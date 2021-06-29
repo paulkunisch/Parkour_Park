@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MLAPI;
 
-/* Author: Paul Kunisch, David Hasenhüttl
+/* Author: Paul Kunisch, David Hasenhüttl/22.06.2021
  * this script teleports a player to the corresponding coordinates onTriggerEnter
  * (drag on Gameobject with collider)
  * an easier way would be to use the "other" collider to select the character colliding,

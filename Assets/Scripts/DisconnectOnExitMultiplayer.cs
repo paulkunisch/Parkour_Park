@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using MLAPI;
-//Author:Paul Kunisch
+//Author:Paul Kunisch /28.06.2021
 //Script to close netwokeconections if multiplayer is closed by Client
 //to enable reconection to the same session
 

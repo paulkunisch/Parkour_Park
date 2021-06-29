@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// Author: David Hasenhüttl
+// Author: David Hasenhüttl 04.05.2021
 // put this script on a trigger GO, once you enter the trigger & tutorial is finished,
 // you'll get a message asking you to confirm a scene change
 // press the button shown in the ui message and you go to the scene

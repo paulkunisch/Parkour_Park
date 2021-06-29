@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-// Author: David Hasenhüttl, Paul Kunisch
+// Author: David Hasenhüttl, Paul Kunisch/ 25.04.2021
 public class Controller : MonoBehaviour
 {
     // Inputsystem Controller

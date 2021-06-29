@@ -257,6 +257,9 @@ MonoBehaviour:
   deathzoneY: 0
   uiMessage: {fileID: 0}
   uiSecondsEnabled: 5
+  flag1: {fileID: 0}
+  flag2: {fileID: 0}
+  flag3: {fileID: 0}
 --- !u!1 &5144663786250912749
 GameObject:
   m_ObjectHideFlags: 0

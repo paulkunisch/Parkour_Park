@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Author: David Hasenhüttl
+// Author: David Hasenhüttl/20.06.2021
 public class Lvl4_Checkpoint_Return : MonoBehaviour
 {
     [SerializeField]

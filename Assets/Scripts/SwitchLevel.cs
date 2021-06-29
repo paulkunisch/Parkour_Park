@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// Author: David Hasenhüttl
+// Author: David Hasenhüttl/09.05.2021
 public class SwitchLevel : MonoBehaviour
 {
     [SerializeField]

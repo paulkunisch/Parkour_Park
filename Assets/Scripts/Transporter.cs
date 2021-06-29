@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// Author: Timo Fröhlich, David Hasenhüttl
+// Author: Timo Fröhlich, David Hasenhüttl/08.05.2021
 public class Transporter : MonoBehaviour
 {
     [SerializeField]
